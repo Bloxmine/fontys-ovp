@@ -1,0 +1,15 @@
+:root {
+    --fontys-purple: #663366;
+    --fontys-blue: #0076E0;
+    --text-color-main: #000000;
+    --text-color-secondary: #666666;
+    --background-color-main: #f4f4f4;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color-main);
+    color: var(--text-color-main);
+    margin: 0;
+    padding: 0;
+}
