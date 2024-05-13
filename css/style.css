@@ -1,3 +1,5 @@
+*                   { margin:0;padding:0;box-sizing:border-box;  }
+
 :root {
     --fontys-purple: #663366;
     --fontys-blue: #0076E0;
@@ -21,9 +23,15 @@ nav{
     justify-content: space-between;
     font-size: 16px;
     font-weight: 400;
+    
+}
+
+nav img{
+    max-width: 94px;
 }
 
 .nav-left{
     display: flex;
+    align-items: center;
 }
 
