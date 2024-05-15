@@ -42,19 +42,30 @@ h2 {
 }
 
 section {
+    position: relative;
     margin: 2em 0 2em 15vw;
     width: 85vw;
     overflow: hidden;
 }
 
-section > div#carousel {
-    position: relative;
+section > div#gradient{
+    position: absolute;;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-image: linear-gradient( 90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+    width: 15vw;
+    z-index: 100;
+}
+
+section > div#slideshow {
+    transition: 500ms ease-in-out;
     display: flex;
     width: calc( var(--slide-width) * var(--number-of-slides) + var(--slide-gap) * (var(--number-of-slides) - 1));
     gap: var(--slide-gap);
 }
 
-section > div#carousel > article {
+section > div#slideshow > article {
     background-color: var(--greycolor);
     display: grid;
     width: var(--slide-width);
@@ -63,12 +74,12 @@ section > div#carousel > article {
     grid-template-columns: 1fr 2fr;
 }
 
-section > div#carousel > article > img {
+section > div#slideshow > article > img {
     width: 100%;
     height: auto;
 }
 
-section > div#carousel > article > content {
+section > div#slideshow > article > content {
     display: grid;
     gap: 2em;
     margin: 2em 0;
@@ -78,19 +89,19 @@ section > div#carousel > article > content {
     grid-template-columns: 1fr 2fr;
 }
 
-section > div#carousel > article > content > h3 {
+section > div#slideshow > article > content > h3 {
     grid-area: h3;
     font-weight: 300;
 }
 
-section > div#carousel > article > content > p {
+section > div#slideshow > article > content > p {
     grid-area: p;
     line-height: 1.5em;
     font-size: 1rem;
     font-weight: 300;
 }
 
-section > div#carousel > article > content > button {
+section > div#slideshow > article > content > button {
     grid-area: button;
     padding: 0.5em 1em;
     border: none;
@@ -102,7 +113,7 @@ section > div#carousel > article > content > button {
     transition: 0.3s;
 }
 
-section > div#carousel > article > content > button > a{
+section > div#slideshow > article > content > button > a{
     color: var(--purplecolor);
     font-size: 1rem;
 }

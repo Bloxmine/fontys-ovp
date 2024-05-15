@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preload" href="fonts/roboto/Roboto-Bold.woff2" as="font" type="font/woff2" crossorigin>
-    <script src="js/scripts.js"></script>
+    <script src="js/scripts.js" defer></script>
     <title>OVP</title>
 </head>
 <body>
     <h2>Alumini aan het woord</h2>
     <section>
-        <div id="carousel">
+        <div id="slideshow">
             <article>
                 <img src="img/daan.jpg" alt="Daan">
                 <content>
@@ -40,9 +40,10 @@
                 </content>
             </article>
         </div>
+        <div id="gradient"></div>
     </section>
     <div id="navigationarrows">
-        <button class="inactive" id="arrowleft">&#10094;</button>
+        <button id="arrowleft">&#10094;</button>
         <button id="arrowright">&#10095;</button>
     </div>
 </body>
