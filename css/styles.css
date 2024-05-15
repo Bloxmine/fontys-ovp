@@ -13,6 +13,8 @@
 
 :root {
     --number-of-slides: 3;
+    --slide-width: 70vw;
+    --slide-gap: 4em;
     --transition-time: 0.5s;
     --transition-timing-function: ease-in-out;
     --greycolor: #F7F7F7;
@@ -33,57 +35,62 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+}
+
+h2 {
+    text-align: center;
 }
 
 section {
-
-    display: flex;
-    width: calc(2* var(--number-of-slides));
+    margin: 2em 0 2em 15vw;
+    width: 85vw;
     overflow: hidden;
-    margin: 2em 15%;
-    gap: 2em;
 }
 
-section > article {
+section > div#carousel {
+    position: relative;
+    display: flex;
+    width: calc( var(--slide-width) * var(--number-of-slides) + var(--slide-gap) * (var(--number-of-slides) - 1));
+    gap: var(--slide-gap);
+}
+
+section > div#carousel > article {
     background-color: var(--greycolor);
     display: grid;
-    width: 100%;
-    gap: 2em;
+    width: var(--slide-width);
     padding: 2em;
+    gap: 4em;
     grid-template-columns: 1fr 2fr;
 }
 
-section > article > img {
+section > div#carousel > article > img {
     width: 100%;
     height: auto;
 }
 
-section > article > content {
+section > div#carousel > article > content {
     display: grid;
     gap: 2em;
     margin: 2em 0;
     grid-template-areas: "h3 h3"
                          "p p"
-                         ". ."
                          "button .";
     grid-template-columns: 1fr 2fr;
 }
 
-section > article > content > h3 {
+section > div#carousel > article > content > h3 {
     grid-area: h3;
-    font-size: 1.5rem;
     font-weight: 300;
 }
 
-section > article > content > p {
+section > div#carousel > article > content > p {
     grid-area: p;
-    line-height: 2em;
+    line-height: 1.5em;
     font-size: 1rem;
     font-weight: 300;
 }
 
-section > article > content > button {
+section > div#carousel > article > content > button {
     grid-area: button;
     padding: 0.5em 1em;
     border: none;
@@ -95,7 +102,7 @@ section > article > content > button {
     transition: 0.3s;
 }
 
-section > article > content > button > a{
+section > div#carousel > article > content > button > a{
     color: var(--purplecolor);
     font-size: 1rem;
 }
@@ -112,6 +119,7 @@ div#navigationarrows {
 }
 
 div#navigationarrows > button {
+    transition: 500ms;
     padding: 0.25em 1em;
     border: none;
     background-color: var(--greycolor);
@@ -121,4 +129,10 @@ div#navigationarrows > button {
     transition: 0.3s;
     color: var(--pinkcolor);
     font-size: 2em;
+}
+
+div#navigationarrows > button.inactive {
+    transition: 500ms;
+    color: var(--darkgreycolor);
+    cursor: default;
 }
