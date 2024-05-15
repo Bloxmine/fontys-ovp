@@ -11,9 +11,114 @@
     font-display: swap;
 }
 
+:root {
+    --number-of-slides: 3;
+    --transition-time: 0.5s;
+    --transition-timing-function: ease-in-out;
+    --greycolor: #F7F7F7;
+    --darkgreycolor: #D9D9D9;
+    --purplecolor: #663366;
+    --pinkcolor: #DA0077;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+
+    display: flex;
+    width: calc(2* var(--number-of-slides));
+    overflow: hidden;
+    margin: 2em 15%;
+    gap: 2em;
+}
+
+section > article {
+    background-color: var(--greycolor);
+    display: grid;
+    width: 100%;
+    gap: 2em;
+    padding: 2em;
+    grid-template-columns: 1fr 2fr;
+}
+
+section > article > img {
+    width: 100%;
+    height: auto;
+}
+
+section > article > content {
+    display: grid;
+    gap: 2em;
+    margin: 2em 0;
+    grid-template-areas: "h3 h3"
+                         "p p"
+                         ". ."
+                         "button .";
+    grid-template-columns: 1fr 2fr;
+}
+
+section > article > content > h3 {
+    grid-area: h3;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+section > article > content > p {
+    grid-area: p;
+    line-height: 2em;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+section > article > content > button {
+    grid-area: button;
+    padding: 0.5em 1em;
+    border: none;
+    background-color: transparent;
+    border: 1px solid var(--purplecolor);
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+section > article > content > button > a{
+    color: var(--purplecolor);
+    font-size: 1rem;
+}
+
+h3 b {
+    font-weight: 700;
+}
+
+div#navigationarrows {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+div#navigationarrows > button {
+    padding: 0.25em 1em;
+    border: none;
+    background-color: var(--greycolor);
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+    color: var(--pinkcolor);
+    font-size: 2em;
 }
