@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid test</title>
+    <style>
+        :root {
+            --fontys-purple: #663366;
+            --fontys-blue: #0076E0;
+            --text-color-main: #000000;
+            --text-color-secondary: #666666;
+            --background-color-main: #f4f4f4;
+            --text-shadow: 0 0 0px #000;
+        }
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    
+        .parent {
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            grid-template-rows: repeat(8, 1fr);
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+            height: 100vh;
+            }
+
+            .div1 { grid-area: 1 / 1 / 2 / 11; 
+            background-color: var(--fontys-purple);}
+            .div2 { grid-area: 2 / 2 / 9 / 10; 
+            background-color: var(--background-color-main);}
+        .logo {
+            width: 100px;
+            height: 100px;
+            background-color: var(--fontys-blue);
+            border-radius: 50%;
+            margin: 0 auto;
+            margin-top: 50px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        .logo img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+        .nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: var(--fontys-purple);
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="div1">
+            <div class="logo">
+                <img src="images/heading.png" alt="Fontys logo">
+            </div>
+            <nav class="nav">
+                <a href="index.html">Home</a>
+                <a href="opleiding.html">Opleiding</a>
+                <a href="inschrijven.html">Inschrijven</a>
+                <a href="contact.html">Contact</a>
+        </div>
+        <div class="div2">Test</div>
+    </div>
+</body>
+</html>
