@@ -80,10 +80,20 @@
     padding: 1rem;
     border: 1
   }
+  .info p {
+    margin-bottom: 1rem;
+    font-family: 'RobotoRegular', sans-serif;
+  }
   footer {
-  background-color: var(--fontys-blue);
+  background-color: var(--fontys-purple);
   padding: 20px;
   display: flex;
+}
+
+.call-to-action {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 2rem;
 }
 
 .footer-container {
@@ -99,6 +109,7 @@
 .footer-col h2 {
   font-size: 1.2em;
   margin-bottom: 10px;
+  color: white;
 }
 
 .footer-col ul {
@@ -111,12 +122,12 @@
 }
 
 .footer-col a {
-  color: #333;
+  color: var(--fontys-blue);
   text-decoration: none;
 }
 
 .footer-col a:hover {
-  color: #000;
+  color: #ffffff;
 }
 
 .footer-col.footer-col:last-child {
@@ -138,20 +149,43 @@
 }
 
 .box {
-  background-color: var(--fontys-blue);
-  padding: 1rem;
-  border-radius: 5px;
+  background-color: white;
+  border: 3px solid #ddd;
+  padding: 0; /* Adjust this value as needed */
   text-align: center;
+  min-height: 400px; /* Add this line */
+}
+
+.box img {
+  width: 100%;
 }
 
 .box h2 {
   margin-bottom: 0.5rem;
 }
 
-.box a {
-  text-decoration: none;
-  color: #333;
+.box p {
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-family: 'RobotoRegular', sans-serif;
 }
+
+.boxbutton {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: var(--fontys-purple);
+  padding: 1rem 3rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-size: 1.5rem;
+}
+
+.boxbutton:hover {
+  background-color: #663366;
+  cursor: pointer;
+}
+
 .key-circle {
     position: fixed;
     top: 50%;
@@ -303,6 +337,11 @@ input[type="text"]::placeholder {
 @font-face {
   font-family: 'Roboto';
   src: url('/fonts/roboto/Roboto-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'RobotoRegular';
+  src: url('/fonts/roboto/Roboto-Regular.woff') format('woff');
 }
 
 .carousel {
