@@ -6,7 +6,8 @@
     --background-color-main: #f4f4f4;
     --text-shadow: 0 0 0px #000;
 }
-    body {
+
+  body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
@@ -37,17 +38,34 @@
   .main {
     padding: 2rem;
   }
+
+  .showcase-image-box {
+    display: grid;
+    background-image: url(/images/heading.png);
+    background-size: cover;
+    background-position: top;
+    height: 500px; /* Adjust this value as needed */
+}
   
   .showcase {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 1rem;
+    background-image: url(/images/heading.png);
+    background-size: cover;
+    background-position: top;
+    height: 500px;
   }
+
   
   .text-content {
     padding: 1rem;
-    background-color: var(--fontys-blue);
-  }
+    color: white;
+    text-shadow: 0 0 2px #000;
+    font-size: 1.5rem;
+    background-color: rgba(116, 116, 116, 0.5);
+    backdrop-filter: blur(5px);
+}
   
   .text-content h1 {
     margin-bottom: 1rem;
@@ -62,10 +80,20 @@
     padding: 1rem;
     border: 1
   }
+  .info p {
+    margin-bottom: 1rem;
+    font-family: 'RobotoRegular', sans-serif;
+  }
   footer {
-  background-color: var(--fontys-blue);
+  background-color: var(--fontys-purple);
   padding: 20px;
   display: flex;
+}
+
+.call-to-action {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 2rem;
 }
 
 .footer-container {
@@ -81,6 +109,7 @@
 .footer-col h2 {
   font-size: 1.2em;
   margin-bottom: 10px;
+  color: white;
 }
 
 .footer-col ul {
@@ -93,12 +122,12 @@
 }
 
 .footer-col a {
-  color: #333;
+  color: var(--fontys-blue);
   text-decoration: none;
 }
 
 .footer-col a:hover {
-  color: #000;
+  color: #ffffff;
 }
 
 .footer-col.footer-col:last-child {
@@ -120,20 +149,43 @@
 }
 
 .box {
-  background-color: var(--fontys-blue);
-  padding: 1rem;
-  border-radius: 5px;
+  background-color: white;
+  border: 3px solid #ddd;
+  padding: 0; /* Adjust this value as needed */
   text-align: center;
+  min-height: 400px; /* Add this line */
+}
+
+.box img {
+  width: 100%;
 }
 
 .box h2 {
   margin-bottom: 0.5rem;
 }
 
-.box a {
-  text-decoration: none;
-  color: #333;
+.box p {
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-family: 'RobotoRegular', sans-serif;
 }
+
+.boxbutton {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: var(--fontys-purple);
+  padding: 1rem 3rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-size: 1.5rem;
+}
+
+.boxbutton:hover {
+  background-color: #663366;
+  cursor: pointer;
+}
+
 .key-circle {
     position: fixed;
     top: 50%;
@@ -280,4 +332,20 @@ input[type="text"]::placeholder {
 }
 #dropdown5 {
     width: 180px;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('/fonts/roboto/Roboto-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'RobotoRegular';
+  src: url('/fonts/roboto/Roboto-Regular.woff') format('woff');
+}
+
+.carousel {
+  width: 100%; /* Make the iframe span the width of the page */
+  border: none; /* Remove the border */
+  height: 800px; /* Adjust this value as needed */
 }
