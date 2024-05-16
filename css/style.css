@@ -227,7 +227,7 @@ input[type="text"]::placeholder {
     position: absolute;
     min-width: 160px;
     z-index: 1;
-    background-color: #724072;
+    background-color: #724072;s
     top: 30px;
     left: 10px;
     border-radius: 10px;
