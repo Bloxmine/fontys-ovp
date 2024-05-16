@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fontys HBO ICT Deeltijd</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/matrix.js" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-</head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fontys ICT Education</title>
+  <script src="js/matrix.js" defer></script>
+  <link href="css/landingpage.css" rel="stylesheet">
 
+</head>
 <body>
+    <canvas id="matrix-canvas" style="position: fixed; top: 0; left: 0; z-index: -1;"></canvas>
     <nav>
         <div class="nav-left">
-            <img src="img/logo.png" alt="Fontys Logo">
+            <img src="images/fontys.png" alt="Fontys Logo">
             <search>
                 <input type="text" placeholder="Zoeken">
         </div>
@@ -54,8 +53,6 @@
                         <a href="#">Voor werkgevers</a>
                         <a href="#">Stagiars & afstudeerders</a>
                         <a href="#">Alumni</a>
-                        
-                       
                     </div>
                 </div>
                 <div class="dropdown">
@@ -72,39 +69,119 @@
             </div>
         </div>
     </nav>
-    <main>
-        <div class="grid-container">
-            <div class="left-column">
-                <section>
-                    <h2>Deeltijd</h2>
-                    <p>Content for section 1.</p>
-                    <div class="superimage">
-                    </div>
-                </section>
-            </div>
-            <div class="middle-column">
-                <section>
-                    <h2>Wat wilt u leren?</h2>
-                    <p>Content for section 2.</p>
-                </section>
-            </div>
-            <div class="right-column">
-                <section>
-                    <h2>Section 3</h2>
-                    <p>Content for section 3.</p>
-                </section>
-            </div>
+  <main class="main">
+    <section class="showcase">
+      <div class="text-content">
+        <h1>ICT onderwijs designer voor Professionals</h1>
+        <p>2 jaar Nederlands Associate Degree Deeltijd</p>
+        <a href="#">Open Dag</a>
+        <p>Start februari en september | Eindhoven</p>
+      </div>
+      <div class="image-content">
+        <img src="open_dag_banner.jpg" alt="Open Dag Banner"> </div>
+    </section>
+    <section class="info">
+      <h2>Deeltijd ICT studeren?</h2>
+      <p>Geef je loopbaan een boost met een deeltijdopleiding om kennis en vaardigheden te verbreden en verdiepen of je verder te ontwikkelen in een specifieke functie. Je kunt in deeltijd ICT studeren op drie niveaus met opdrachten uit eigen werkpraktijk.</p>
+      <a href="#">Bezoek open dag</a>
+    </section>
+    <section class="call-to-action">
+      <h2>Kies jouw eigen studieroute en word de ICT'er die je zou willen zijn!</h2>
+    </section>
+    <section class="boxes-container">
+      <div class="box">
+        <img src="images/ADICT.png" alt="AD-ICT">
+        <h2>AD-ICT (Associate Degree)</h2>
+        <p>Tweejarige opleiding op HBO niveau gericht op een specifieke functie</p>
+        <div class="boxbutton">Meer informatie</div>
+      </div>
+      <div class="box">
+        <img src="images/HBOICT.png" alt="HBO-ICT">
+        <h2>HBO-ICT (Bachelor)</h2>
+        <p>Kies je persoonlijke leerroute: verbreden of verdiepen binnen het totale aanbod</p>
+        <div class="boxbutton">Meer informatie</div>
+      </div>
+      <div class="box">
+        <img src="images/Versneld.png" alt="Versneld-HBO">
+        <h2>Versnelde instroom</h2>
+        <p>Verdiep je in een specifiek vakgebied en ontwikkel je tot expert</p>
+        <div class="boxbutton">Meer informatie</div>
+      </div>
+      <div class="box">
+        <img src="images/Master.png" alt="Master">
+        <h2>Master of applied IT</h2>
+        <p>Verdiep je in een specifiek vakgebied en ontwikkel je tot expert</p>
+        <div class="boxbutton">Meer informatie</div>
+      </div>
+    </section>
+    </section>
+    <section class="info">
+      <h2>ICT Onderwijs voor Professionals</h2>
+      <p>
+        Heeft ICT altijd al je interesse gewekt? Of ben je al geruime tijd werkzaam in de ICT en wil je dit gewaardeerd zien met een passend diploma? Fontys Hogeschool ICT biedt verschillende mogelijkheden in haar Onderwijs voor Professionals. Het deeltijd onderwijs heeft minder contacturen dan een voltijdopleiding. Het onderwijs vindt 's avonds plaats (met uitzondering van de master), één avond op locatie en één avond online. Daardoor prima te combineren met een baan.</p>
+      <a href="#">Contact</a>
+
+      <div class="dropdowns">
+        <div class="foto-links-dropdown">
+          <img src="images\students-working-study-group 1.png" alt="AD-ICT">
         </div>
-    </main>
-    <footer>
-        &copy; 2024 Fontys HBO ICT Deeltijd
-    </footer>
-    <script>
-        // gsap animations for h1, nav and section and other elements
-        gsap.from('header', {duration: 0.5, y: -100, opacity: 0, ease: 'power1.out', delay: 0.5});
-        gsap.from('nav', {duration: 0.5, y: -100, opacity: 0, ease: 'power1.out', delay: 0.5});
-        gsap.from('section', {duration: 0.5, y: 100, opacity: 0, ease: 'power2.out', delay: 1});
-        gsap.from('footer', {duration: 0.5, y: 100, opacity: 0, ease: 'power2.out', delay: 1.5});
-    </script>
+        <div class="dropdown-questions">
+          <a class="dropdown-hover-box" href="index.html">Opleidingen</a>
+          <div class="dropdown-questions-content" id="dropdown-questions-1">
+              <a href="#">Masters</a>
+              <a href="#">Cursussen</a>
+              <a href="#">Minoren</a>
+              <a href="#">Kennisevents</a>
+          </div>
+      </div>
+      </div>
+      <iframe class="carousel" src="carousel.html" title="carousel"></iframe>
+  </main>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-col">
+        <h2>Studiekeuze</h2>
+        <ul>
+          <li><a href="#">Voltijdopleidingen</a></li>
+          <li><a href="#">Deeltijdopleidingen</a></li>
+          <li><a href="#">Open dagen</a></li>
+          <li><a href="#">Meeloopdagen en proefstuderen</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h2>Contact</h2>
+        <ul>
+          <li><a href="#">Klantcontactcentrum: 08850 80000</a></li>
+          <li><a href="#">Whatsapp:+31610176464</a></li>
+          <li><a href="#">Veelgestelde vragen</a></li>
+          <li><a href="#">Locaties</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h2>Fontys</h2>
+        <ul>
+          <li><a href="#">Nieuws en pers</a></li>
+          <li><a href="#">Fontys Helpt</a></li>
+          <li><a href="#">Vacatures</a></li>
+          <li><a href="#">Stagiair nodig?</a></li>
+          <li><a href="#">Regelingen, statuten en reglementen</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h2>Info</h2>
+        <ul>
+          <li><a href="#">Aanmelden</a></li>
+          <li><a href="#">Informatie voor nieuwe studenten</a></li>
+          <li><a href="#">Fontysinstituten</a></li>
+          <li><a href="#">Cookieverklaring</a></li>
+          <li><a href="#">Privacy verklaring Fontys Hogeschool</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h2>Social Media</h2>
+        <a href="#">Find us on social media:</a>
+        </div>
+    </div>
+  </footer>  
 </body>
 </html>
