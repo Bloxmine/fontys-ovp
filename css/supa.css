@@ -6,7 +6,8 @@
     --background-color-main: #f4f4f4;
     --text-shadow: 0 0 0px #000;
 }
-    body {
+
+  body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
@@ -37,17 +38,34 @@
   .main {
     padding: 2rem;
   }
+
+  .showcase-image-box {
+    display: grid;
+    background-image: url(/images/heading.png);
+    background-size: cover;
+    background-position: top;
+    height: 500px; /* Adjust this value as needed */
+}
   
   .showcase {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 1rem;
+    background-image: url(/images/heading.png);
+    background-size: cover;
+    background-position: top;
+    height: 500px;
   }
+
   
   .text-content {
     padding: 1rem;
-    background-color: var(--fontys-blue);
-  }
+    color: white;
+    text-shadow: 0 0 2px #000;
+    font-size: 1.5rem;
+    background-color: rgba(116, 116, 116, 0.5);
+    backdrop-filter: blur(5px);
+}
   
   .text-content h1 {
     margin-bottom: 1rem;
@@ -280,4 +298,15 @@ input[type="text"]::placeholder {
 }
 #dropdown5 {
     width: 180px;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('/fonts/roboto/Roboto-Bold.woff') format('woff');
+}
+
+.carousel {
+  width: 100%; /* Make the iframe span the width of the page */
+  border: none; /* Remove the border */
+  height: 800px; /* Adjust this value as needed */
 }
