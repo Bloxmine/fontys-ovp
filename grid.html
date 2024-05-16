@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fontys ICT Education</title>
   <script src="js/matrix.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
   <link href="css/supa.css" rel="stylesheet">
 </head>
 <body>
@@ -166,6 +167,15 @@
         <a href="#">Find us on social media:</a>
         </div>
     </div>
-  </footer>  
+  </footer>
+  <script>
+    //gsap animations for h1, nav and section and other elements
+    gsap.from('nav', {duration: 0.5, y: -100, opacity: 0, ease: 'power3.out', delay: 0.5});
+    gsap.from('.showcase', {duration: 0.5, y: -100, opacity: 0, ease: 'power1.out', delay: 1});
+    gsap.from('.info', {duration: 0.5, y: -100, opacity: 0, ease: 'power1.out', delay: 1});
+    gsap.from('.call-to-action', {duration: 0.5, y: -100, opacity: 0, ease: 'power1.out', delay: 1});
+    gsap.from('.boxes-container', {duration: 0.5, y: -100, opacity: 0, ease: 'power1.out', delay: 1});
+    gsap.from('footer', {duration: 0.5, y: 100, opacity: 0, ease: 'power2.out', delay: 1});
+  </script>
 </body>
 </html>
