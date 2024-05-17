@@ -336,12 +336,14 @@ input[type="text"]::placeholder {
 
 @font-face {
   font-family: 'Roboto';
-  src: url('/fonts/roboto/Roboto-Bold.woff') format('woff');
+  src: url('../fonts/roboto/Roboto-Bold.woff') format('woff');
 }
 
 @font-face {
   font-family: 'RobotoRegular';
-  src: url('/fonts/roboto/Roboto-Regular.woff') format('woff');
+
+
+  src: url('../fonts/roboto/Roboto-Regular.woff') format('woff');
 }
 
 .carousel {
@@ -399,4 +401,177 @@ input[type="text"]::placeholder {
   background-image: url("data:image/svg+xml,%3Csvg width='9' height='9' viewBox='0 0 9 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='4.5' cy='4.5' r='4.5' fill='%23DA0077'/%3E%3C/svg%3E%0A");
   background-repeat: no-repeat;
   background-position: 5% 50%;
+}
+
+/* levi code */
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('fonts/roboto/Roboto-Regular.eot');
+  src: url('fonts/roboto/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+      url('fonts/roboto/Roboto-Regular.woff2') format('woff2'),
+      url('fonts/roboto/Roboto-Regular.woff') format('woff'),
+      url('fonts/roboto/Roboto-Regular.ttf') format('truetype'),
+      url('fonts/roboto/Roboto-Regular.svg#Roboto-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --number-of-slides: 3;
+  --slide-width: 70vw;
+  --slide-gap: 4em;
+  --transition-time: 0.5s;
+  --transition-timing-function: ease-in-out;
+  --greycolor: #F7F7F7;
+  --darkgreycolor: #D9D9D9;
+  --purplecolor: #663366;
+  --pinkcolor: #DA0077;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+section {
+  position: relative;
+  margin: 2em 0 2em 0vw;
+  width: 85vw;
+  overflow: hidden;
+}
+
+section > div#gradient{
+  position: absolute;;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background-image: linear-gradient( 90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+  width: 0vw;
+  z-index: 100;
+}
+
+section > div#slideshow {
+  transition: 500ms ease-in-out;
+  display: flex;
+  width: calc( var(--slide-width) * var(--number-of-slides) + var(--slide-gap) * (var(--number-of-slides) - 1));
+  gap: var(--slide-gap);
+}
+
+section > div#slideshow > article {
+  background-color: var(--greycolor);
+  display: grid;
+  width: var(--slide-width);
+  padding: 2em;
+  gap: 4em;
+  grid-template-columns: 1fr 2fr;
+}
+
+section > div#slideshow > article > img {
+  width: 100%;
+  height: auto;
+}
+
+section > div#slideshow > article > content {
+  display: grid;
+  gap: 2em;
+  margin: 2em 0;
+  grid-template-areas: "h3 h3"
+                       "p p"
+                       "button .";
+  grid-template-columns: 1fr 2fr;
+}
+
+section > div#slideshow > article > content > h3 {
+  grid-area: h3;
+  font-weight: 300;
+}
+
+section > div#slideshow > article > content > p {
+  grid-area: p;
+  line-height: 1.5em;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+section > div#slideshow > article > content > button {
+  grid-area: button;
+  padding: 0.5em 1em;
+  border: none;
+  background-color: transparent;
+  border: 1px solid var(--purplecolor);
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+section > div#slideshow > article > content > button > a{
+  color: var(--purplecolor);
+  font-size: 1rem;
+}
+
+h3 b {
+  font-weight: 700;
+}
+
+div#navigationarrows {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+}
+
+div#navigationarrows > button {
+  transition: 500ms;
+  padding: 0.25em 1em;
+  border: none;
+  background-color: var(--greycolor);
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+  color: var(--pinkcolor);
+  font-size: 2em;
+}
+
+div#navigationarrows > button.inactive {
+  transition: 500ms;
+  color: var(--darkgreycolor);
+  cursor: default;
+}
+
+section#calltoactiongrid{
+  justify-self: center;
+  align-self: center;
+  width: 70vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2em;
+  margin: 2em 0;
+}
+section#calltoactiongrid article{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2em;
+}
+
+section#calltoactiongrid article.purplecalltoaction{
+  font-weight: 300;
 }
