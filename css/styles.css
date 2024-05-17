@@ -147,3 +147,24 @@ div#navigationarrows > button.inactive {
     color: var(--darkgreycolor);
     cursor: default;
 }
+
+section#calltoactiongrid{
+    justify-self: center;
+    align-self: center;
+    width: 70vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2em;
+    margin: 2em 0;
+}
+section#calltoactiongrid article{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2em;
+}
+
+section#calltoactiongrid article.purplecalltoaction{
+    font-weight: 300;
+}
