@@ -72,8 +72,10 @@
   
   .info {
     margin-top: 2rem;
-    border: 1
+    border: 1;
+    display: flex;
   }
+  
   .info p {
     margin-bottom: 1rem;
     font-family: 'RobotoRegular', sans-serif;
@@ -649,4 +651,76 @@ div#navigationarrows > button.inactive {
   transition: 500ms;
   color: var(--darkgreycolor);
   cursor: default;
+}
+
+/* info section */
+
+.info-left p{
+  color: #524D43;
+  font-size: 16px;
+  text-align: left;
+  line-height: 30px;
+}
+
+.info-left h2{
+  color: #000000;
+  font-size: 20px;
+  text-align: left;
+  line-height: 30px;
+}
+
+.info-left ul li{
+  color: #524D43;
+  font-size: 16px;
+  text-align: left;
+  line-height: 40px;
+
+}
+
+.info-left svg{
+  margin-right: 11px;
+}
+
+.information{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  vertical-align: middle;
+
+  max-width: 1440px
+}
+
+.info-left{
+  width: 50%;
+}
+
+.info-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+}
+
+
+.video-container {
+  position: relative;
+  width: 80%;
+  padding-top: 45%; /* for 4:3 aspect ratio */
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 11px;
+}
+
+ul.no-bullets {
+  list-style-type: none;
+}
+
+ul {
+  list-style-type: none;
 }
