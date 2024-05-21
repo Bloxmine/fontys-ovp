@@ -189,7 +189,7 @@
   background-color: #663366;
   cursor: pointer;
 }
-
+/* easter egg */
 .key-circle {
     position: fixed;
     top: 50%;
@@ -207,7 +207,33 @@
     border: 2px solid white;
     z-index: 1;
 }
+<<<<<<< Updated upstream:css/supa.css
 /* Louis */
+=======
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate(-50%, -50%) translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate(-50%, -50%) translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate(-50%, -50%) translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate(-50%, -50%) translate3d(4px, 0, 0);
+  }
+}
+
+.shake {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+}
+
+>>>>>>> Stashed changes:css/landingpage.css
 nav{
     display: flex;
     background-color: var(--fontys-purple);

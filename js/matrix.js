@@ -14,11 +14,19 @@
                 konamiIndex = 0;
             }
         } else {
+            // Get the last pressed button element
+            const lastPressedButton = document.querySelector('.key-circle:last-child');
+            // Shake the last pressed button element
+            if (lastPressedButton) shakeElement(lastPressedButton);
             konamiIndex = 0;
         }
     });
+    // shake hip
+    function shakeElement(element) {
+        element.classList.add('shake');
+        setTimeout(() => element.classList.remove('shake'), 1000);
+    }
 
-    // fancy keys
     function showKey(key) {
         const div = document.createElement('div');
         div.className = 'key-circle';
@@ -38,6 +46,7 @@
             div.textContent = key;
         }
         document.body.appendChild(div);
+
         setTimeout(() => document.body.removeChild(div), 1000);
     }
 
@@ -52,6 +61,15 @@
         document.documentElement.style.setProperty('--text-shadow', '0 0 5px #0f0');
         // change text-color-secondary to black
         document.documentElement.style.setProperty('--text-color-secondary', '#000');
+        // change background-image directly, from the class .showcase
+        document.querySelector('.showcase').style.backgroundImage = 'url(../images/matrix/heading.png)';
+
+        // change images to matrix counterparts, located in images/matrix
+        const images = document.querySelectorAll('img');
+        images.forEach((img) => {
+            const src = img.src;
+            img.src = src.replace('images', 'images/matrix');
+        });
 
 
         const canvas = document.getElementById('matrix-canvas');
