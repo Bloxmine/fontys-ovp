@@ -41,26 +41,42 @@ h2 {
     text-align: center;
 }
 
-section {
+section:has(> div#slideshow) {
     position: relative;
-    margin: 2em 0 2em 15vw;
-    width: 85vw;
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    grid-template-areas: "gradient-left slideshow gradient-right";
     overflow: hidden;
 }
 
-section > div#gradient{
-    position: absolute;;
+section > div#gradient-right{
+    grid-area: gradient-right;
     height: 100%;
     top: 0;
     right: 0;
     background-image: linear-gradient( 90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
-    width: 15vw;
+    width: 100%;
     z-index: 100;
 }
 
+section > div#gradient-left{
+    grid-area: gradient-left;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient( 270deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+    width: 100%;
+    z-index: 100;
+
+}
+
 section > div#slideshow {
+    position: absolute;
+    grid-area: slideshow;
     transition: 500ms ease-in-out;
+    width: 100%;
     display: flex;
+    align-self: se;
     width: calc( var(--slide-width) * var(--number-of-slides) + var(--slide-gap) * (var(--number-of-slides) - 1));
     gap: var(--slide-gap);
 }
