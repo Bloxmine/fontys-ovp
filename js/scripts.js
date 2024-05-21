@@ -1,4 +1,4 @@
-const slideshow = document.querySelector('#slideshow');
+const carousel = document.querySelector('#carousel');
 const arrowLeft = document.querySelector('#arrowleft');
 const arrowRight = document.querySelector('#arrowright');;
 const root = document.documentElement;
@@ -45,7 +45,7 @@ arrowLeft.addEventListener('click', () => {
         let cardWidth = getPixelValue(getVariable('--slide-width'));
         let gap = getPixelValue(getVariable('--slide-gap'));
         let slideWidth = cardWidth + gap;
-        slideshow.style.transform = "translateX(-" + (currentslide -2) * slideWidth + "px)";
+        carousel.style.transform = "translateX(-" + (currentslide -2) * slideWidth + "px)";
         currentslide--;
         changeArrows();
     }
@@ -58,7 +58,7 @@ arrowRight.addEventListener('click', () => {
         let cardWidth = getPixelValue(getVariable('--slide-width'));
         let gap = getPixelValue(getVariable('--slide-gap'));
         let slideWidth = cardWidth + gap;
-        slideshow.style.transform = "translateX(-" + currentslide * slideWidth + "px)";
+        carousel.style.transform = "translateX(-" + currentslide * slideWidth + "px)";
         currentslide++;
         changeArrows();
     }

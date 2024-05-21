@@ -457,7 +457,7 @@ section#calltoactiongrid{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 2em;
-  margin: 2em 0;
+  margin: 4em 0;
 }
 section#calltoactiongrid article{
   height: 100%;
@@ -528,13 +528,14 @@ section#calltoactiongrid article.purplecalltoaction button a{
   color: white;
 }
 
-section:has(> div#slideshow) {
+section:has(> div#carousel) {
   width: 100%;
   position: relative;
   display: grid;
-  grid-template-columns: 15% 70% 15%;
-  grid-template-areas: "gradient-left slideshow gradient-right";
+  grid-template-columns: 1fr var(--slide-width) 1fr;
+  grid-template-areas: "gradient-left carousel gradient-right";
   overflow: hidden;
+  margin: 2em 0;
 }
 
 section > div#gradient-right{
@@ -558,17 +559,15 @@ section > div#gradient-left{
 
 }
 
-section > div#slideshow {
-  grid-area: slideshow;
+section > div#carousel {
+  grid-area: carousel;
   transition: 500ms ease-in-out;
-  width: 70vw;
   display: flex;
-  align-self: se;
   width: calc( var(--slide-width) * var(--number-of-slides) + var(--slide-gap) * (var(--number-of-slides) - 1));
   gap: var(--slide-gap);
 }
 
-section > div#slideshow > article {
+section > div#carousel > article {
   background-color: var(--greycolor);
   display: grid;
   width: var(--slide-width);
@@ -577,34 +576,34 @@ section > div#slideshow > article {
   grid-template-columns: 1fr 2fr;
 }
 
-section > div#slideshow > article > img {
+section > div#carousel > article > img {
   width: 100%;
   height: auto;
 }
 
-section > div#slideshow > article > content {
+section > div#carousel > article > content {
   display: grid;
-  gap: 2em;
   margin: 2em 0;
+  gap: 2em;
   grid-template-areas: "h3 h3"
                        "p p"
                        "button .";
   grid-template-columns: 1fr 2fr;
 }
 
-section > div#slideshow > article > content > h3 {
+section > div#carousel > article > content > h3 {
   grid-area: h3;
   font-weight: 300;
 }
 
-section > div#slideshow > article > content > p {
+section > div#carousel > article > content > p {
   grid-area: p;
   line-height: 1.5em;
   font-size: 1rem;
   font-weight: 300;
 }
 
-section > div#slideshow > article > content > button {
+section > div#carousel > article > content > button {
   grid-area: button;
   padding: 0.5em 1em;
   border: none;
@@ -616,7 +615,7 @@ section > div#slideshow > article > content > button {
   transition: 0.3s;
 }
 
-section > div#slideshow > article > content > button > a{
+section > div#carousel > article > content > button > a{
   color: var(--purplecolor);
   font-size: 1rem;
 }
