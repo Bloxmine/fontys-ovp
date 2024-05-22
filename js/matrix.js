@@ -49,12 +49,13 @@
 
         setTimeout(() => document.body.removeChild(div), 1000);
     }
-
+    activateMatrixMode();
     function activateMatrixMode() {
         // change fontys-purple to black
         document.documentElement.style.setProperty('--fontys-purple', '#000');
         // change fontys-blue to green
         document.documentElement.style.setProperty('--fontys-blue', '#0f0');
+        document.documentElement.style.setProperty('--fontys-white', '#13b320');
         // change text-color-main to green
         document.documentElement.style.setProperty('--text-color-main', '#0f0');
         // add green glow effect
@@ -63,7 +64,9 @@
         document.documentElement.style.setProperty('--text-color-secondary', '#000');
         // change background-image directly, from the class .showcase
         document.querySelector('.showcase').style.backgroundImage = 'url(../images/matrix/heading.png)';
-
+        //change gradients to nothing in 
+        document.querySelector('section > div#gradient-right').style.backgroundImage = 'none';
+document.querySelector('section > div#gradient-left').style.backgroundImage = 'none';
         // change images to matrix counterparts, located in images/matrix
         const images = document.querySelectorAll('img');
         images.forEach((img) => {

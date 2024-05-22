@@ -5,6 +5,7 @@
     --text-color-secondary: #666666;
     --background-color-main: #f4f4f4;
     --text-shadow: 0 0 0px #000;
+    --fontys-white: #ffffff;
 }
 
   body {
@@ -72,12 +73,14 @@
   
   .info {
     margin-top: 2rem;
-    border: 1
+    color: var(--text-color-main);
   }
+
   .info p {
     margin-bottom: 1rem;
     font-family: 'RobotoRegular', sans-serif;
   }
+
   footer {
   background-color: var(--fontys-purple);
   padding: 20px;
@@ -143,8 +146,8 @@
 }
 
 .box {
-  background-color: white;
-  border: 3px solid #ddd;
+  background-color: var(--fontys-white);
+  border: 3px solid var(--fontys-white);
   padding: 0; /* Adjust this value as needed */
   text-align: center;
   min-height: 400px; /* Add this line */
@@ -167,7 +170,7 @@
 
 .boxbutton {
   text-decoration: none;
-  color: #ffffff;
+  color: var(--fontys-blue);
   background-color: var(--fontys-purple);
   padding: 1rem 3rem;
   margin-left: 1rem;
@@ -254,7 +257,7 @@ nav img{
 
 
 input {
-    background-color: #754475;
+    background-color: var(--fontys-purple);
     height: 48px;
     border: none;
     border-radius: 8px;
@@ -267,18 +270,18 @@ input {
 }
 
 input[type="text"] {
-   color: #D9D9D9;
+   color: var(--fontys-blue);
    font-size: 16px;
 }
 
 input[type="text"]::placeholder {
-    color: #D9D9D9;
+    color: var(--fontys-blue);
  }
  
  
  input[type="text"]:focus {
     outline: none;
-    border: 1px solid #FFFFFF;
+    border: 1px solid var(--fontys-blue);
 }
 
 .dropdown {
@@ -293,7 +296,7 @@ input[type="text"]::placeholder {
     position: absolute;
     min-width: 160px;
     z-index: 1;
-    background-color: #724072;
+    background-color: var(--fontys-purple);
     top: 30px;
     left: 10px;
     border-radius: 10px;
@@ -318,7 +321,7 @@ input[type="text"]::placeholder {
 
 .dropdown > a:after {
     content: '';
-    border: solid #FFFFFF;
+    border: solid var(--fontys-blue);
     border-width: 0 1.5px 1.5px 0;
     display: inline-block;
     padding: 2px;
@@ -363,9 +366,9 @@ input[type="text"]::placeholder {
 }
 
 .carousel {
-  width: 100%; /* Make the iframe span the width of the page */
-  border: none; /* Remove the border */
-  height: 800px; /* Adjust this value as needed */
+  width: 100%;
+  border: none;
+  height: 800px;
 }
 
 /* dropdown questions */
@@ -387,7 +390,7 @@ input[type="text"]::placeholder {
   position: absolute;
   min-width: 160px;
   z-index: 1;
-  background-color: red;
+  background-color: var(--fontys-purple);
   top: 30px;
   left: 10px;
   border-radius: 10px;
@@ -578,7 +581,6 @@ section > div#gradient-left{
   background-image: linear-gradient( 270deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
   width: 100%;
   z-index: 100;
-
 }
 
 section > div#carousel {
