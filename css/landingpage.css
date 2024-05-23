@@ -32,12 +32,17 @@
   .logo {
     display: flex;
     align-items: center;
+    cursor: pointer;
   }
   
   .logo img {
     width: 80px;
     height: 50px;
     margin-right: 1rem;
+  }
+
+  .logo img:hover {
+    cursor: pointer;
   }
 
   .showcase-image-box {
@@ -47,7 +52,27 @@
     background-position: top;
     height: 500px;
 }
-  
+
+@keyframes flyby {
+  0% {
+    transform: translateX(-100vw);
+  }
+  100% {
+    transform: translateX(100vw);
+  }
+}
+
+.flyby-div {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 82px;
+  background-image: url(/images/contra.gif);
+  background-size: contain;
+  animation: flyby 6s linear forwards;
+}
+
   .showcase {
     display: grid;
     grid-template-columns: 1fr 1fr;

@@ -129,3 +129,21 @@
             }
         });
     }
+
+    let lastTriggered = 0;
+
+    document.getElementById('logo').addEventListener('click', function() {
+      const now = Date.now();
+      if (now - lastTriggered < 1000) {
+        return;
+      }
+      lastTriggered = now;
+    
+      const div = document.createElement('div');
+      div.className = 'flyby-div';
+      document.body.appendChild(div);
+    
+      div.addEventListener('animationend', function() {
+        document.body.removeChild(div);
+      });
+    });
