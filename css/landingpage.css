@@ -135,8 +135,8 @@
   font-size: 1.2em;
   margin-bottom: 10px;
   color: white;
+  text-align: left;
 }
-
 .footer-col ul {
   list-style: none;
   padding: 0;
@@ -204,7 +204,7 @@
 
 .boxbutton {
   text-decoration: none;
-  color: var(--fontys-blue);
+  color: var(--fontys-white);
   background-color: var(--fontys-purple);
   padding: 1rem 3rem;
   margin-left: 1rem;
@@ -214,7 +214,6 @@
 
 .boxbutton:hover {
   background-color: var(--pinkcolor);
-  color: var(--fontys-white);
   cursor: pointer;
 }
 
