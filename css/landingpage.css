@@ -409,55 +409,6 @@ input[type="text"]::placeholder {
 /* dropdown questions */
 
 
-<<<<<<< Updated upstream
-.dropdown-questions {
-  position: relative;
-  display: inline-block;
-  border-bottom: 30px solid transparent;
-  margin-bottom: -30px;
-  width: 100%;
-}
-
-.dropdown-questions-content {
-  display: none;
-  position: absolute;
-  min-width: 160px;
-  z-index: 1;
-  background-color: var(--fontys-purple);
-  top: 30px;
-  left: 10px;
-  border-radius: 10px;
-  padding: 20px 0px 20px 25px;
-}
-
-.dropdown-questions:hover .dropdown-questions-content {
-  display: block;
-}
-
-.dropdown-questions-content a {
-  display: block;
-  padding: 5px 0px 5px 0px
-}
-
-.dropdown-hover-box{
-  background-color: #F7F7F7;
-  width: 100%;
-  display: flex;
-  height: 40px;
-  align-items: center;
-  text-decoration: none;
-  font-size: 16px;
-  color: #524D43;
-  padding-left: 50px;
-  font-family: 'RobotoRegular', sans-serif;
-  background-image: url("data:image/svg+xml,%3Csvg width='9' height='9' viewBox='0 0 9 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='4.5' cy='4.5' r='4.5' fill='%23DA0077'/%3E%3C/svg%3E%0A");
-  background-repeat: no-repeat;
-  background-position: 5% 50%;
-}
-
-/* levi code */
-=======
->>>>>>> Stashed changes
 
 @font-face {
   font-family: 'Roboto';
@@ -707,9 +658,6 @@ div#navigationarrows > button.inactive {
   transition: 500ms;
   color: var(--darkgreycolor);
   cursor: default;
-<<<<<<< Updated upstream
-}
-=======
 }
 
 /* info section */
@@ -929,4 +877,3 @@ ul ul .hasDD.on > a:after {
     border-color: #ccc;
   }
 }
->>>>>>> Stashed changes
