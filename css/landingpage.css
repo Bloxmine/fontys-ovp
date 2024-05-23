@@ -5,6 +5,7 @@
     --text-color-secondary: #666666;
     --background-color-main: #f4f4f4;
     --text-shadow: 0 0 0px #000;
+    --fontys-white: #ffffff;
 }
 
   body {
@@ -12,6 +13,11 @@
     margin: 0;
     padding: 0;
     display: flex;
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--pinkcolor);
   }
   
   .header {
@@ -39,7 +45,7 @@
     background-image: url(/images/heading.png);
     background-size: cover;
     background-position: top;
-    height: 500px; /* Adjust this value as needed */
+    height: 500px;
 }
   
   .showcase {
@@ -58,8 +64,6 @@
     color: white;
     text-shadow: 0 0 2px #000;
     font-size: 1.5rem;
-    background-color: rgba(116, 116, 116, 0.5);
-    backdrop-filter: blur(5px);
 }
   
   .text-content h1 {
@@ -67,17 +71,44 @@
   }
   
   .image-content {
-    text-align: center;
-  }
-  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 350px; 
+}
+
+.image-content img {
+    width: 40%;
+    height: 40%;
+    z-index: 9999;
+    box-shadow: 0 0 10px #878787;
+}
   .info {
     margin-top: 2rem;
-    border: 1
+    color: var(--text-color-main);
+    align-content: left;
   }
+
+  .opendaginfo {
+    background-color: var(--fontys-purple);
+    color: var(--fontys-white);
+    padding: 1rem 3rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .opendaginfo:hover {
+    background-color: var(--pinkcolor);
+    color: var(--fontys-white);
+    cursor: pointer;
+  }
+
   .info p {
     margin-bottom: 1rem;
     font-family: 'RobotoRegular', sans-serif;
   }
+
   footer {
   background-color: var(--fontys-purple);
   padding: 20px;
@@ -85,7 +116,7 @@
 }
 
 .call-to-action {
-  color: rgb(0, 0, 0);
+  color: var(--text-color-main);
   text-align: center;
   padding: 2rem;
 }
@@ -104,8 +135,8 @@
   font-size: 1.2em;
   margin-bottom: 10px;
   color: white;
+  text-align: left;
 }
-
 .footer-col ul {
   list-style: none;
   padding: 0;
@@ -134,20 +165,26 @@
 .footer-col.footer-col:last-child a {
   margin-bottom: 10px;
 }
+.boxes-container-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-content: start;
+}
 
-  .boxes-container {
+.boxes-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 1rem;
   padding: 1rem;
+  align-items: start;
 }
 
 .box {
-  background-color: white;
-  border: 3px solid #ddd;
-  padding: 0; /* Adjust this value as needed */
+  background-color: var(--fontys-white);
+  border: 2px solid var(--fontys-blue);
+  padding: 0;
   text-align: center;
-  min-height: 400px; /* Add this line */
+  min-height: 400px;
 }
 
 .box img {
@@ -167,7 +204,7 @@
 
 .boxbutton {
   text-decoration: none;
-  color: #ffffff;
+  color: var(--fontys-white);
   background-color: var(--fontys-purple);
   padding: 1rem 3rem;
   margin-left: 1rem;
@@ -176,7 +213,7 @@
 }
 
 .boxbutton:hover {
-  background-color: #663366;
+  background-color: var(--pinkcolor);
   cursor: pointer;
 }
 
@@ -196,6 +233,28 @@
     box-shadow: 0 0 5px rgb(0, 0, 0);
     border: 2px solid white;
     z-index: 1;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate(-50%, -50%) translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate(-50%, -50%) translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate(-50%, -50%) translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate(-50%, -50%) translate3d(4px, 0, 0);
+  }
+}
+
+.shake {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
 }
 
 nav{
@@ -232,7 +291,7 @@ nav img{
 
 
 input {
-    background-color: #754475;
+    background-color: var(--fontys-purple);
     height: 48px;
     border: none;
     border-radius: 8px;
@@ -245,18 +304,18 @@ input {
 }
 
 input[type="text"] {
-   color: #D9D9D9;
+   color: var(--fontys-blue);
    font-size: 16px;
 }
 
 input[type="text"]::placeholder {
-    color: #D9D9D9;
+    color: var(--fontys-blue);
  }
  
  
  input[type="text"]:focus {
     outline: none;
-    border: 1px solid #FFFFFF;
+    border: 1px solid var(--fontys-blue);
 }
 
 .dropdown {
@@ -271,7 +330,7 @@ input[type="text"]::placeholder {
     position: absolute;
     min-width: 160px;
     z-index: 1;
-    background-color: #724072;
+    background-color: var(--fontys-purple);
     top: 30px;
     left: 10px;
     border-radius: 10px;
@@ -296,7 +355,7 @@ input[type="text"]::placeholder {
 
 .dropdown > a:after {
     content: '';
-    border: solid #FFFFFF;
+    border: solid var(--fontys-blue);
     border-width: 0 1.5px 1.5px 0;
     display: inline-block;
     padding: 2px;
@@ -341,9 +400,9 @@ input[type="text"]::placeholder {
 }
 
 .carousel {
-  width: 100%; /* Make the iframe span the width of the page */
-  border: none; /* Remove the border */
-  height: 800px; /* Adjust this value as needed */
+  width: 100%;
+  border: none;
+  height: 800px;
 }
 
 /* dropdown questions */
@@ -365,7 +424,7 @@ input[type="text"]::placeholder {
   position: absolute;
   min-width: 160px;
   z-index: 1;
-  background-color: red;
+  background-color: var(--fontys-purple);
   top: 30px;
   left: 10px;
   border-radius: 10px;
@@ -418,7 +477,7 @@ section {
   justify-content: center;
   align-items: center;
 }
-
+/* levi root */
 :root {
   --number-of-slides: 3;
   --slide-width: 70vw;
@@ -556,7 +615,6 @@ section > div#gradient-left{
   background-image: linear-gradient( 270deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
   width: 100%;
   z-index: 100;
-
 }
 
 section > div#carousel {

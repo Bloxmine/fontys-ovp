@@ -6,6 +6,7 @@
   <title>Fontys ICT Education</title>
   <script src="js/matrix.js" defer></script>
   <script src="js/carousel.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
   <link href="css/landingpage.css" rel="stylesheet">
 
 </head>
@@ -79,43 +80,74 @@
         <p>Start februari en september | Eindhoven</p>
       </div>
       <div class="image-content">
-        <img src="open_dag_banner.jpg" alt="Open Dag Banner"> </div>
     </section>
     <section class="info">
       <h2>Deeltijd ICT studeren?</h2>
       <p>Geef je loopbaan een boost met een deeltijdopleiding om kennis en vaardigheden te verbreden en verdiepen of je verder te ontwikkelen in een specifieke functie. Je kunt in deeltijd ICT studeren op drie niveaus met opdrachten uit eigen werkpraktijk.</p>
-      <a href="#">Bezoek open dag</a>
+      <a href="https://www.fontys.nl/Open-dagen-bij-Fontys.htm">
+        <div class="opendaginfo">Bezoek open dag</div>
+    </a>
     </section>
     <section class="call-to-action">
       <h2>Kies jouw eigen studieroute en word de ICT'er die je zou willen zijn!</h2>
     </section>
+    <section class="boxes-container-container">
     <section class="boxes-container">
+
       <div class="box">
-        <img src="images/ADICT.png" alt="AD-ICT">
-        <h2>AD-ICT (Associate Degree)</h2>
-        <p>Tweejarige opleiding op HBO niveau gericht op een specifieke functie</p>
-        <div class="boxbutton">Meer informatie</div>
+          <!-- Box 1 -->
+          <img src="images/ADICT.png" alt="AD-ICT">
+          <h2>AD-ICT (Associate Degree)</h2>
+          <p>Tweejarige opleiding op HBO niveau gericht op een specifieke functie</p>
+          <div class="boxbutton" id="myButton1">Meer informatie</div>
+          <div id="mySection1" style="display: none; margin: 0 20px; padding-top: 20px; padding-bottom: 20px"><h2>Wil jij een gerichte ICT-functie op HBO-niveau</h2> of wil je een stap verder zetten in je huidige ICT-functie maar geen 4 jaar studeren? Dan is de Associate Degree opleiding wellicht de juiste match voor jou! Wil je later doorstromen naar de bachelor HBO-ICT, dan is een soepel doorstroomprogramma voor je geregeld.
+
+            Over de opleiding
+            
+            Fontys biedt als enige en eerste hogeschool een brede Associate Degree opleiding aan binnen de ICT. In het eerste half jaar maak je via drie van vijf verschillende richtingen kennis met de breedte van het ICT-vakgebied. Van websites vormgeven, organisatieprocessen automatiseren, netwerken inrichten, software ontwikkelen tot robots programmeren. Daarna kies je één richting waarbinnen je specifiek wordt opgeleid voor een gerichte ICT-functie met oog voor verandering en verbetering binnen die functie. </div>
       </div>
       <div class="box">
-        <img src="images/HBOICT.png" alt="HBO-ICT">
-        <h2>HBO-ICT (Bachelor)</h2>
-        <p>Kies je persoonlijke leerroute: verbreden of verdiepen binnen het totale aanbod</p>
-        <div class="boxbutton">Meer informatie</div>
+          <!-- Box 2 -->
+          <img src="images/HBOICT.png" alt="HBO-ICT">
+          <h2>HBO-ICT (Bachelor)</h2>
+          <p>Kies je persoonlijke leerroute: verbreden of verdiepen binnen het totale aanbod</p>
+          <div class="boxbutton" id="myButton2">Meer informatie</div>
+          <div id="mySection2" style="display: none; margin: 0 20px; padding-top: 20px; padding-bottom: 20px"><h2>ICT is overal.</h2> Elke dag wordt er gewerkt aan de ontwikkeling van nieuwe toepassingen. Wil jij een bachelor opleiding volgen in het brede ICT vakgebied? Als omscholing of juist als aanvulling op je huidige ICT-baan? In welke richting je ook verder wilt, bij ons is het mogelijk.
+
+            Over de opleiding
+            
+            Je doet je kennis op door een combinatie van zelfstudie, lessen op school en virtuele sessies, maar ook met het toepassen van praktijkopdrachten in je werkomgeving. Hierdoor is er een mooie wisselwerking tussen theorie en praktijk.
+            
+            In principe loop je geen stage, maar gebruik je hiervoor je passende werkomgeving om je werkervaring aan te tonen. Je sluit je opleiding af met een afstudeeropdracht die je bij je werkgever of een ander bedrijf kunt uitvoeren.</div>
       </div>
       <div class="box">
-        <img src="images/Versneld.png" alt="Versneld-HBO">
-        <h2>Versnelde instroom</h2>
-        <p>Verdiep je in een specifiek vakgebied en ontwikkel je tot expert</p>
-        <div class="boxbutton">Meer informatie</div>
+          <!-- Box 3 -->
+          <img src="images/Versneld.png" alt="Versneld-HBO">
+          <h2>Versnelde instroom</h2>
+          <p>Verdiep je in een specifiek vakgebied en ontwikkel je tot expert</p>
+          <div class="boxbutton" id="myButton3">Meer informatie</div>
+          <div id="mySection3" style="display: none; margin: 0 20px; padding-top: 20px; padding-bottom: 20px"><h2>Ontwikkel je ICT-vaardigheden met een van de cursussen van Accelerate IT</h2>
+
+            Wil jij je als professional of als werkzoekende graag ontwikkelen op ICT-vlak, maar is tijd het grootste struikelblok? Dan is een cursus een goed idee. Onze hbo-cursussen bieden je niet alleen diepgaande kennis en een professioneel netwerk, maar je doet vooral waardevolle praktijkervaring op die essentieel is voor persoonlijke groei en verbeterde carrièremogelijkheden.</div>
       </div>
       <div class="box">
-        <img src="images/Master.png" alt="Master">
-        <h2>Master of applied IT</h2>
-        <p>Verdiep je in een specifiek vakgebied en ontwikkel je tot expert</p>
-        <div class="boxbutton">Meer informatie</div>
+          <!-- Box 4 -->
+          <img src="images/Master.png" alt="Master">
+          <h2>Master of applied IT</h2>
+          <p>Verdiep je in een specifiek vakgebied en ontwikkel je tot expert</p>
+          <div class="boxbutton" id="myButton4">Meer informatie</div>
+          <div id="mySection4" style="display: none; margin: 0 20px; padding-top: 20px; padding-bottom: 20px"><h2>Onze wereld draait steeds meer om ICT.</h2> Uitdagingen in zowel de technologie als de maatschappij in het algemeen zijn complexer en vereisen oplossingen die verder gaan dan alleen ICT-expertise en -toepassing. Ben jij iemand die graag antwoorden vindt op deze uitdagingen? Wil je toepassingen ontwikkelen die een impact hebben in een grotere context?
+            Over het programma
+            
+            Ben jij een zelfstandige en zelfverzekerde ICT-professional die wil leren inzichten af te leiden uit uitdagingen die leiden tot algemene, innovatieve oplossingen? Kortom, ben jij iemand die oplossingen wil creëren die impact hebben op de maatschappij? Dan is de Fontys Master of Applied IT iets voor jou.
+            
+            Fontys ICT biedt gemotiveerde studenten de mogelijkheid om zich in te schrijven voor de Master of Applied IT. Deze masteropleiding is gekoppeld aan de Fontys ICT bacheloropleiding (BSc) en biedt je de mogelijkheid om je verder te professionaliseren met een bredere en diepere kennis van je vakgebied.
+            
+            Bij Fontys ICT streven we naar een nauwe aansluiting en samenwerking met het werkveld in ons onderwijs. Dat kun je dus ook verwachten in onze Master of Applied IT.</div>
       </div>
+  </section>
     </section>
-    </section>
+  </section>
     <section class="info">
       <h2>ICT Onderwijs voor Professionals</h2>
       <p>
@@ -141,7 +173,7 @@
           <div id="gradient-left"></div>
           <div id="carousel">
               <article>
-                  <img src="img/daan.jpg" alt="Daan">
+                  <img src="images/daan.jpg" alt="Daan">
                   <content>
                       <h3><b>Daan Pingen</b> - Senior Software Engineer</h3>
                       <p>Als oud-student van de ICT-opleiding aan Fontys Hogeschool, kan ik met volle overtuiging zeggen dat mijn tijd daar de basis heeft gelegd voor mijn succesvolle carrière als Senior Software Engineer. De opleiding bood een uitgebalanceerd curriculum dat zowel theoretische kennis als praktische vaardigheden omvatte, wat van ons als studenten echte probleemoplossers maakte.
@@ -150,7 +182,7 @@
                   </content>
               </article>
               <article>
-                  <img src="img/frank.jpg" alt="Frank">
+                  <img src="images/frank.jpg" alt="Frank">
                   <content>
                       <h3><b>Frank Holla</b> - Robotics Software Engineer</h3>
                       <p>Als oud-student van de ICT-opleiding aan Fontys Hogeschool, kan ik met volle overtuiging zeggen dat mijn tijd daar de basis heeft gelegd voor mijn succesvolle carrière als Robotics Software Engineer. De opleiding bood een uitgebalanceerd curriculum dat zowel theoretische kennis als praktische vaardigheden omvatte, wat van ons als studenten echte probleemoplossers maakte.
@@ -159,7 +191,7 @@
                   </content>
               </article>
               <article>
-                  <img src="img/noah.jpg" alt="Noah">
+                  <img src="images/noah.jpg" alt="Noah">
                   <content>
                       <h3><b>Noah van der Veen</b> - UI/UX Designer and Developer</h3>
                       <p>Als voormalig student van de ICT-opleiding aan Fontys Hogeschool, kan ik met volle overtuiging zeggen dat mijn tijd daar de fundamenten heeft gelegd voor mijn bloeiende carrière als UI/UX Designer en Developer. De opleiding bood een rijk curriculum dat zowel theoretische inzichten als praktische vaardigheden omvatte, wat ons als studenten uitdaagde om creatieve probleemoplossers te worden.
