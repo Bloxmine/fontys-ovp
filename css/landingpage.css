@@ -387,10 +387,8 @@ input[type="text"]::placeholder {
 
 /* dropdown questions */
 
-.dropdowns{
-  display: flex;
-}
 
+<<<<<<< Updated upstream
 .dropdown-questions {
   position: relative;
   display: inline-block;
@@ -437,6 +435,8 @@ input[type="text"]::placeholder {
 }
 
 /* levi code */
+=======
+>>>>>>> Stashed changes
 
 @font-face {
   font-family: 'Roboto';
@@ -686,4 +686,226 @@ div#navigationarrows > button.inactive {
   transition: 500ms;
   color: var(--darkgreycolor);
   cursor: default;
+<<<<<<< Updated upstream
 }
+=======
+}
+
+/* info section */
+
+.info-left p{
+  color: #524D43;
+  font-size: 16px;
+  text-align: left;
+  line-height: 30px;
+}
+
+.info-left h2{
+  color: #000000;
+  font-size: 20px;
+  text-align: left;
+  line-height: 30px;
+}
+
+.info-left ul li{
+  color: #524D43;
+  font-size: 16px;
+  text-align: left;
+  line-height: 40px;
+
+}
+
+.info-left svg{
+  margin-right: 11px;
+}
+
+.information{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  vertical-align: middle;
+
+  max-width: 1440px
+}
+
+.info-left{
+  width: 50%;
+}
+
+.info-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+}
+
+
+.video-container {
+  position: relative;
+  width: 80%;
+  padding-top: 45%; /* for 4:3 aspect ratio */
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 11px;
+}
+
+ul.no-bullets {
+  list-style-type: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* dropdown questions */
+
+.dropdown-questions {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdowns{
+  display: flex;
+}
+
+/* dropdown questions TESTSETSETSETSETSET*/
+
+.mainnav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  background: #e3e3e3;
+  position: relative;
+}
+.mainnav li {
+  display: inline-block;
+  position: relative;
+}
+.mainnav a {
+  color: #292929;
+  text-decoration: none;
+  padding: 15px 30px 15px 15px;
+  display: block;
+  position: relative;
+}
+.on > a,
+.mainnav li:hover > a {
+  background: lightgrey;
+}
+.mainnav ul ul {
+  position: absolute;
+  top: 100%;
+  min-width: 200px;
+  background: lightgrey;
+  display: none;
+}
+.mainnav ul ul ul {
+  left: 100%;
+  top: 0;
+}
+.mainnav ul ul li {
+  display: block;
+  background: #e3e3e3;
+}
+.mainnav ul ul ul li {
+  background: #eee;
+}
+/* lets not confuse click with hover for now
+.mainnav ul li:hover ul {
+	display: block;
+}
+*/
+.mainnav li i {
+  color: #292929;
+  float: right;
+  padding-left: 20px;
+}
+.mainnav div {
+  background: lightgrey;
+  color: #292929;
+  font-size: 24px;
+  padding: 0.6em;
+  cursor: pointer;
+  display: none;
+}
+.hasDD > a:after {
+  content: "";
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  margin-top: -3px;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #000;
+  transition: all 0.5s linear;
+}
+.mainnav li:hover > a:after {
+  border-top-color: red;
+}
+.hasDD.on > a:after {
+  transform: rotate(180deg);
+}
+ul ul .hasDD.on > a:after {
+  transform: rotate(-90deg);
+}
+
+@media (min-width: 768px) {
+  /* over-ride js inline style*/
+  .mainnav > ul {
+    display: block !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .mainnav div {
+    display: block;
+  }
+  .mainnav ul {
+    display: none;
+    position: static;
+    /*background: #e3e3e3;*/
+  }
+  .mainnav ul li {
+    display: block;
+  }
+  .mainnav ul ul {
+    position: static;
+    background: #e3e3e3;
+  }
+  ul ul .hasDD.on > a:after {
+    transform: rotate(-180deg);
+  }
+  .hasDD,
+  .hasDD.on {
+    transition: border 0.5s ease;
+  }
+  li.hasDD.on {
+    border-left: 10px solid #666;
+  }
+  ul ul li.hasDD.on {
+    border-color: #aaa;
+  }
+  ul ul ul li.hasDD.on {
+    border-color: #ccc;
+  }
+}
+>>>>>>> Stashed changes

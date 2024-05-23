@@ -63,3 +63,4 @@ arrowRight.addEventListener('click', () => {
         changeArrows();
     }
 });
+
