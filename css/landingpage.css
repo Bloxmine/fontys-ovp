@@ -89,6 +89,21 @@
     align-content: left;
   }
 
+  .opendaginfo {
+    background-color: var(--fontys-purple);
+    color: var(--fontys-white);
+    padding: 1rem 3rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .opendaginfo:hover {
+    background-color: var(--pinkcolor);
+    color: var(--fontys-white);
+    cursor: pointer;
+  }
+
   .info p {
     margin-bottom: 1rem;
     font-family: 'RobotoRegular', sans-serif;
@@ -150,12 +165,18 @@
 .footer-col.footer-col:last-child a {
   margin-bottom: 10px;
 }
+.boxes-container-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-content: start;
+}
 
-  .boxes-container {
+.boxes-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 1rem;
   padding: 1rem;
+  align-items: start;
 }
 
 .box {
