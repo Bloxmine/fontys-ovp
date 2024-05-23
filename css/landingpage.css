@@ -800,7 +800,7 @@ div#navigationarrows > button.inactive {
 }
 
 .info-left p{
-  color: var(--louis-grey)
+  color: var(--louis-grey);
   font-size: 16px;
   text-align: left;
   line-height: 30px;
@@ -876,7 +876,7 @@ ul {
 
 .singlequestion-dropdown ul {
 
-  color: #524D43;
+  color: var(--louis-grey);
   padding-left: 40px;
 }
 
@@ -943,7 +943,7 @@ line-height: 30px;
 }
 
 .single-answer-dropdown-open{
-  background-color: var(--greycolor);
+  background-color: var(--louis-grey);
   margin-top: -11px;
   padding: 0px 20px 20px 20px;
 }
