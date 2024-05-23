@@ -63,3 +63,7 @@ arrowRight.addEventListener('click', () => {
         changeArrows();
     }
 });
+<<<<<<< HEAD
+=======
+
+>>>>>>> parent of 741101f (Video Section & Typerend voor Onderwijs section finished)
