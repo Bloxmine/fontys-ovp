@@ -6,6 +6,7 @@
     --background-color-main: #f4f4f4;
     --text-shadow: 0 0 0px #000;
     --fontys-white: #ffffff;
+    --louis-grey: #524D43;
 }
 
   body {
@@ -799,21 +800,21 @@ div#navigationarrows > button.inactive {
 }
 
 .info-left p{
-  color: var(--fontys-blue);
+  color: var(--louis-grey)
   font-size: 16px;
   text-align: left;
   line-height: 30px;
 }
 
 .info-left h2{
-  color: var(--text-color-main);
+  color: var(--louis-grey);
   font-size: 20px;
   text-align: left;
   line-height: 30px;
 }
 
 .info-left ul li{
-  color: var(--fontys-blue);
+  color: var(--louis-grey);
   font-size: 16px;
   text-align: left;
   line-height: 40px;

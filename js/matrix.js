@@ -69,6 +69,7 @@
         document.documentElement.style.setProperty('--greycolor', '#000');
         document.documentElement.style.setProperty('--purplecolor', '#0f0');
         document.documentElement.style.setProperty('--pinkcolor', '#0f0');
+        document.documentElement.style.setProperty('--louis-grey', '#0f0');
         // change background-image directly, from the class .showcase
         document.querySelector('.showcase').style.backgroundImage = 'url(../images/matrix/heading.png)';
         //change gradients to nothing in 
