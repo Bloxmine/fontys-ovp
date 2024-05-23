@@ -5,6 +5,7 @@
     --text-color-secondary: #666666;
     --background-color-main: #f4f4f4;
     --text-shadow: 0 0 0px #000;
+    --fontys-white: #ffffff;
 }
 
   body {
@@ -12,6 +13,11 @@
     margin: 0;
     padding: 0;
     display: flex;
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--pinkcolor);
   }
   
   .header {
@@ -39,7 +45,7 @@
     background-image: url(/images/heading.png);
     background-size: cover;
     background-position: top;
-    height: 500px; /* Adjust this value as needed */
+    height: 500px;
 }
   
   .showcase {
@@ -58,8 +64,6 @@
     color: white;
     text-shadow: 0 0 2px #000;
     font-size: 1.5rem;
-    background-color: rgba(116, 116, 116, 0.5);
-    backdrop-filter: blur(5px);
 }
   
   .text-content h1 {
@@ -67,19 +71,29 @@
   }
   
   .image-content {
-    text-align: center;
-  }
-  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 350px; 
+}
+
+.image-content img {
+    width: 40%;
+    height: 40%;
+    z-index: 9999;
+    box-shadow: 0 0 10px #878787;
+}
   .info {
     margin-top: 2rem;
-    border: 1;
-    display: flex;
+    color: var(--text-color-main);
+    align-content: left;
   }
-  
+
   .info p {
     margin-bottom: 1rem;
     font-family: 'RobotoRegular', sans-serif;
   }
+
   footer {
   background-color: var(--fontys-purple);
   padding: 20px;
@@ -87,7 +101,7 @@
 }
 
 .call-to-action {
-  color: rgb(0, 0, 0);
+  color: var(--text-color-main);
   text-align: center;
   padding: 2rem;
 }
@@ -145,11 +159,11 @@
 }
 
 .box {
-  background-color: white;
-  border: 3px solid #ddd;
-  padding: 0; /* Adjust this value as needed */
+  background-color: var(--fontys-white);
+  border: 2px solid var(--fontys-blue);
+  padding: 0;
   text-align: center;
-  min-height: 400px; /* Add this line */
+  min-height: 400px;
 }
 
 .box img {
@@ -169,7 +183,7 @@
 
 .boxbutton {
   text-decoration: none;
-  color: #ffffff;
+  color: var(--fontys-blue);
   background-color: var(--fontys-purple);
   padding: 1rem 3rem;
   margin-left: 1rem;
@@ -178,7 +192,8 @@
 }
 
 .boxbutton:hover {
-  background-color: #663366;
+  background-color: var(--pinkcolor);
+  color: var(--fontys-white);
   cursor: pointer;
 }
 
@@ -198,6 +213,28 @@
     box-shadow: 0 0 5px rgb(0, 0, 0);
     border: 2px solid white;
     z-index: 1;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate(-50%, -50%) translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate(-50%, -50%) translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate(-50%, -50%) translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate(-50%, -50%) translate3d(4px, 0, 0);
+  }
+}
+
+.shake {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
 }
 
 nav{
@@ -234,7 +271,7 @@ nav img{
 
 
 input {
-    background-color: #754475;
+    background-color: var(--fontys-purple);
     height: 48px;
     border: none;
     border-radius: 8px;
@@ -247,18 +284,18 @@ input {
 }
 
 input[type="text"] {
-   color: #D9D9D9;
+   color: var(--fontys-blue);
    font-size: 16px;
 }
 
 input[type="text"]::placeholder {
-    color: #D9D9D9;
+    color: var(--fontys-blue);
  }
  
  
  input[type="text"]:focus {
     outline: none;
-    border: 1px solid #FFFFFF;
+    border: 1px solid var(--fontys-blue);
 }
 
 .dropdown {
@@ -273,7 +310,7 @@ input[type="text"]::placeholder {
     position: absolute;
     min-width: 160px;
     z-index: 1;
-    background-color: #724072;
+    background-color: var(--fontys-purple);
     top: 30px;
     left: 10px;
     border-radius: 10px;
@@ -298,7 +335,7 @@ input[type="text"]::placeholder {
 
 .dropdown > a:after {
     content: '';
-    border: solid #FFFFFF;
+    border: solid var(--fontys-blue);
     border-width: 0 1.5px 1.5px 0;
     display: inline-block;
     padding: 2px;
@@ -343,9 +380,9 @@ input[type="text"]::placeholder {
 }
 
 .carousel {
-  width: 100%; /* Make the iframe span the width of the page */
-  border: none; /* Remove the border */
-  height: 800px; /* Adjust this value as needed */
+  width: 100%;
+  border: none;
+  height: 800px;
 }
 
 /* dropdown questions */
@@ -367,7 +404,7 @@ input[type="text"]::placeholder {
   position: absolute;
   min-width: 160px;
   z-index: 1;
-  background-color: red;
+  background-color: var(--fontys-purple);
   top: 30px;
   left: 10px;
   border-radius: 10px;
@@ -420,7 +457,7 @@ section {
   justify-content: center;
   align-items: center;
 }
-
+/* levi root */
 :root {
   --number-of-slides: 3;
   --slide-width: 70vw;
@@ -459,7 +496,7 @@ section#calltoactiongrid{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 2em;
-  margin: 2em 0;
+  margin: 4em 0;
 }
 section#calltoactiongrid article{
   height: 100%;
@@ -530,13 +567,14 @@ section#calltoactiongrid article.purplecalltoaction button a{
   color: white;
 }
 
-section:has(> div#slideshow) {
+section:has(> div#carousel) {
   width: 100%;
   position: relative;
   display: grid;
-  grid-template-columns: 15% 70% 15%;
-  grid-template-areas: "gradient-left slideshow gradient-right";
+  grid-template-columns: 1fr var(--slide-width) 1fr;
+  grid-template-areas: "gradient-left carousel gradient-right";
   overflow: hidden;
+  margin: 2em 0;
 }
 
 section > div#gradient-right{
@@ -557,20 +595,17 @@ section > div#gradient-left{
   background-image: linear-gradient( 270deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
   width: 100%;
   z-index: 100;
-
 }
 
-section > div#slideshow {
-  grid-area: slideshow;
+section > div#carousel {
+  grid-area: carousel;
   transition: 500ms ease-in-out;
-  width: 70vw;
   display: flex;
-  align-self: se;
   width: calc( var(--slide-width) * var(--number-of-slides) + var(--slide-gap) * (var(--number-of-slides) - 1));
   gap: var(--slide-gap);
 }
 
-section > div#slideshow > article {
+section > div#carousel > article {
   background-color: var(--greycolor);
   display: grid;
   width: var(--slide-width);
@@ -579,34 +614,34 @@ section > div#slideshow > article {
   grid-template-columns: 1fr 2fr;
 }
 
-section > div#slideshow > article > img {
+section > div#carousel > article > img {
   width: 100%;
   height: auto;
 }
 
-section > div#slideshow > article > content {
+section > div#carousel > article > content {
   display: grid;
-  gap: 2em;
   margin: 2em 0;
+  gap: 2em;
   grid-template-areas: "h3 h3"
                        "p p"
                        "button .";
   grid-template-columns: 1fr 2fr;
 }
 
-section > div#slideshow > article > content > h3 {
+section > div#carousel > article > content > h3 {
   grid-area: h3;
   font-weight: 300;
 }
 
-section > div#slideshow > article > content > p {
+section > div#carousel > article > content > p {
   grid-area: p;
   line-height: 1.5em;
   font-size: 1rem;
   font-weight: 300;
 }
 
-section > div#slideshow > article > content > button {
+section > div#carousel > article > content > button {
   grid-area: button;
   padding: 0.5em 1em;
   border: none;
@@ -618,7 +653,7 @@ section > div#slideshow > article > content > button {
   transition: 0.3s;
 }
 
-section > div#slideshow > article > content > button > a{
+section > div#carousel > article > content > button > a{
   color: var(--purplecolor);
   font-size: 1rem;
 }
@@ -651,76 +686,4 @@ div#navigationarrows > button.inactive {
   transition: 500ms;
   color: var(--darkgreycolor);
   cursor: default;
-}
-
-/* info section */
-
-.info-left p{
-  color: #524D43;
-  font-size: 16px;
-  text-align: left;
-  line-height: 30px;
-}
-
-.info-left h2{
-  color: #000000;
-  font-size: 20px;
-  text-align: left;
-  line-height: 30px;
-}
-
-.info-left ul li{
-  color: #524D43;
-  font-size: 16px;
-  text-align: left;
-  line-height: 40px;
-
-}
-
-.info-left svg{
-  margin-right: 11px;
-}
-
-.information{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  vertical-align: middle;
-
-  max-width: 1440px
-}
-
-.info-left{
-  width: 50%;
-}
-
-.info-right {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 70%;
-}
-
-
-.video-container {
-  position: relative;
-  width: 80%;
-  padding-top: 45%; /* for 4:3 aspect ratio */
-}
-
-.video-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 11px;
-}
-
-ul.no-bullets {
-  list-style-type: none;
-}
-
-ul {
-  list-style-type: none;
 }
