@@ -14,6 +14,11 @@
     padding: 0;
     display: flex;
   }
+
+  a {
+    text-decoration: none;
+    color: var(--pinkcolor);
+  }
   
   .header {
     display: grid;
@@ -40,7 +45,7 @@
     background-image: url(/images/heading.png);
     background-size: cover;
     background-position: top;
-    height: 500px; /* Adjust this value as needed */
+    height: 500px;
 }
   
   .showcase {
@@ -59,8 +64,6 @@
     color: white;
     text-shadow: 0 0 2px #000;
     font-size: 1.5rem;
-    background-color: rgba(116, 116, 116, 0.5);
-    backdrop-filter: blur(5px);
 }
   
   .text-content h1 {
@@ -68,12 +71,22 @@
   }
   
   .image-content {
-    text-align: center;
-  }
-  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 350px; 
+}
+
+.image-content img {
+    width: 40%;
+    height: 40%;
+    z-index: 9999;
+    box-shadow: 0 0 10px #878787;
+}
   .info {
     margin-top: 2rem;
     color: var(--text-color-main);
+    align-content: left;
   }
 
   .info p {
@@ -88,7 +101,7 @@
 }
 
 .call-to-action {
-  color: rgb(0, 0, 0);
+  color: var(--text-color-main);
   text-align: center;
   padding: 2rem;
 }
@@ -147,10 +160,10 @@
 
 .box {
   background-color: var(--fontys-white);
-  border: 3px solid var(--fontys-white);
-  padding: 0; /* Adjust this value as needed */
+  border: 2px solid var(--fontys-blue);
+  padding: 0;
   text-align: center;
-  min-height: 400px; /* Add this line */
+  min-height: 400px;
 }
 
 .box img {
@@ -179,7 +192,8 @@
 }
 
 .boxbutton:hover {
-  background-color: #663366;
+  background-color: var(--pinkcolor);
+  color: var(--fontys-white);
   cursor: pointer;
 }
 
@@ -443,7 +457,7 @@ section {
   justify-content: center;
   align-items: center;
 }
-
+/* levi root */
 :root {
   --number-of-slides: 3;
   --slide-width: 70vw;

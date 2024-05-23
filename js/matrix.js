@@ -49,7 +49,7 @@
 
         setTimeout(() => document.body.removeChild(div), 1000);
     }
-    activateMatrixMode();
+   // activateMatrixMode();
     function activateMatrixMode() {
         // change fontys-purple to black
         document.documentElement.style.setProperty('--fontys-purple', '#000');
@@ -62,6 +62,9 @@
         document.documentElement.style.setProperty('--text-shadow', '0 0 5px #0f0');
         // change text-color-secondary to black
         document.documentElement.style.setProperty('--text-color-secondary', '#000');
+        document.documentElement.style.setProperty('--greycolor', '#000');
+        document.documentElement.style.setProperty('--purplecolor', '#0f0');
+        document.documentElement.style.setProperty('--pinkcolor', '#0f0');
         // change background-image directly, from the class .showcase
         document.querySelector('.showcase').style.backgroundImage = 'url(../images/matrix/heading.png)';
         //change gradients to nothing in 
