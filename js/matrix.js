@@ -113,3 +113,15 @@ document.querySelector('section > div#gradient-left').style.backgroundImage = 'n
             // render the animation at 20 FPS.
             setInterval(matrix, 50);
     }
+
+    for (let i = 1; i <= 4; i++) {
+        document.getElementById('myButton' + i).addEventListener('click', function() {
+            var section = document.getElementById('mySection' + i);
+            if (section.style.display === 'none') {
+                section.style.display = 'block';
+                gsap.fromTo(section, { opacity: 0, y: -50 }, { duration: 1, opacity: 1, y: 0, ease: "bounce.out" });
+            } else {
+                gsap.to(section, { duration: 0.3, opacity: 0, y: 50, ease: "power2.in", onComplete: function() { section.style.display = 'none'; } });
+            }
+        });
+    }
