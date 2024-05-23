@@ -232,22 +232,23 @@
         </div>
 
         <script>
-document.addEventListener('DOMContentLoaded', function () {
-  var questionDropdowns = document.querySelectorAll('.singlequestion-dropdown');
-  var answerDropdowns = document.querySelectorAll('.single-answer-dropdown-open');
+          // louis
+          document.addEventListener('DOMContentLoaded', function () {
+            var questionDropdowns = document.querySelectorAll('.singlequestion-dropdown');
+            var answerDropdowns = document.querySelectorAll('.single-answer-dropdown-open');
 
-  for (let i = 0; i < questionDropdowns.length; i++) {
-    questionDropdowns[i].addEventListener('click', function (event) {
-      event.preventDefault();
-      var displayStyle = getComputedStyle(answerDropdowns[i]).display;
-      if (displayStyle === 'none') {
-        answerDropdowns[i].style.display = 'block';
-      } else {
-        answerDropdowns[i].style.display = 'none';
-      }
-    });
-  }
-});
+            for (let i = 0; i < questionDropdowns.length; i++) {
+              questionDropdowns[i].addEventListener('click', function (event) {
+                event.preventDefault();
+                var displayStyle = getComputedStyle(answerDropdowns[i]).display;
+                if (displayStyle === 'none') {
+                  answerDropdowns[i].style.display = 'block';
+                } else {
+                  answerDropdowns[i].style.display = 'none';
+                }
+              });
+            }
+          });
         </script>
 
         <div class="questions-rechts-dropdown">
@@ -442,7 +443,7 @@ document.addEventListener('DOMContentLoaded', function () {
         <div id="gradient-left"></div>
         <div id="carousel">
           <article>
-            <img src="img/daan.jpg" alt="Daan">
+            <img src="images/daan.jpg" alt="Daan">
             <content>
               <h3><b>Daan Pingen</b> - Senior Software Engineer</h3>
               <p>Als oud-student van de ICT-opleiding aan Fontys Hogeschool, kan ik met volle overtuiging zeggen dat
@@ -458,7 +459,7 @@ document.addEventListener('DOMContentLoaded', function () {
             </content>
           </article>
           <article>
-            <img src="img/frank.jpg" alt="Frank">
+            <img src="images/frank.jpg" alt="Frank">
             <content>
               <h3><b>Frank Holla</b> - Robotics Software Engineer</h3>
               <p>Als oud-student van de ICT-opleiding aan Fontys Hogeschool, kan ik met volle overtuiging zeggen dat
@@ -474,7 +475,7 @@ document.addEventListener('DOMContentLoaded', function () {
             </content>
           </article>
           <article>
-            <img src="img/noah.jpg" alt="Noah">
+            <img src="images/noah.jpg" alt="Noah">
             <content>
               <h3><b>Noah van der Veen</b> - UI/UX Designer and Developer</h3>
               <p>Als voormalig student van de ICT-opleiding aan Fontys Hogeschool, kan ik met volle overtuiging zeggen

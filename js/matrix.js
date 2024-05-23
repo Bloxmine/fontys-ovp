@@ -26,10 +26,14 @@
         element.classList.add('shake');
         setTimeout(() => element.classList.remove('shake'), 1000);
     }
-
+    // button combo
     function showKey(key) {
         const div = document.createElement('div');
         div.className = 'key-circle';
+        const colors = ['red', 'blue', 'orange', 'green'];
+        const color = colors[Math.floor(Math.random() * colors.length)];
+        div.style.backgroundColor = color;
+
         if (key === 'ArrowUp') {
             div.textContent = '↑';
         } else if (key === 'ArrowDown') {
@@ -69,7 +73,7 @@
         document.querySelector('.showcase').style.backgroundImage = 'url(../images/matrix/heading.png)';
         //change gradients to nothing in 
         document.querySelector('section > div#gradient-right').style.backgroundImage = 'none';
-document.querySelector('section > div#gradient-left').style.backgroundImage = 'none';
+        document.querySelector('section > div#gradient-left').style.backgroundImage = 'none';
         // change images to matrix counterparts, located in images/matrix
         const images = document.querySelectorAll('img');
         images.forEach((img) => {
@@ -125,3 +129,21 @@ document.querySelector('section > div#gradient-left').style.backgroundImage = 'n
             }
         });
     }
+
+    let lastTriggered = 0;
+
+    document.getElementById('logo').addEventListener('click', function() {
+      const now = Date.now();
+      if (now - lastTriggered < 1000) {
+        return;
+      }
+      lastTriggered = now;
+    
+      const div = document.createElement('div');
+      div.className = 'flyby-div';
+      document.body.appendChild(div);
+    
+      div.addEventListener('animationend', function() {
+        document.body.removeChild(div);
+      });
+    });

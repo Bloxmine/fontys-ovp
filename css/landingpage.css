@@ -623,6 +623,14 @@ section > div#carousel > article > content > button {
   font-weight: 700;
   cursor: pointer;
   transition: 0.3s;
+  color: var(--purplecolor);
+  font-size: 1rem;
+}
+
+section > div#carousel > article > content > button:hover {
+  background-color: var(--pinkcolor);
+  border: 1px solid var(--pinkcolor);
+  color: white;
 }
 
 section > div#carousel > article > content > button > a{
@@ -630,6 +638,9 @@ section > div#carousel > article > content > button > a{
   font-size: 1rem;
 }
 
+section > div#carousel > article > content > button:hover > a{
+  color: white;
+}
 h3 b {
   font-weight: 700;
 }
@@ -664,24 +675,25 @@ div#navigationarrows > button.inactive {
 
 .info-left{
   padding-right: 40px;
+
 }
 
 .info-left p{
-  color: #524D43;
+  color: var(--fontys-blue);
   font-size: 16px;
   text-align: left;
   line-height: 30px;
 }
 
 .info-left h2{
-  color: #000000;
+  color: var(--text-color-main);
   font-size: 20px;
   text-align: left;
   line-height: 30px;
 }
 
 .info-left ul li{
-  color: #524D43;
+  color: var(--fontys-blue);
   font-size: 16px;
   text-align: left;
   line-height: 40px;
@@ -760,7 +772,7 @@ ul {
 
 .dropdown-question{
   width: 100%;
-  background-color: #F7F7F7;
+  background-color: var(--greycolor);
   height: 44px;
   align-items: center;
   display: flex;
@@ -787,13 +799,12 @@ ul {
 .singlequestion-dropdown ul li::before {
   content: "";
   display: inline-block;
-  width: 10px; /* adjust as needed */
-  height: 10px; /* adjust as needed */
-  background-color: #DA0077; /* adjust as needed */
+  width: 10px;
+  height: 10px; 
+  background-color: var(--pinkcolor);
   border-radius: 50%;
   position: relative;
-   /* adjust as needed */
-  left: -20px; /* adjust as needed */
+  left: -20px;
 }
 
 .single-answer-dropdown-open {
@@ -811,7 +822,7 @@ line-height: 30px;
 }
 
 .single-answer-dropdown-open{
-  background-color: #F7F7F7 ;
+  background-color: var(--greycolor);
   margin-top: -11px;
   padding: 0px 20px 20px 20px;
 }
