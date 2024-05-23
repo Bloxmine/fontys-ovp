@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,69 +9,71 @@
   <script src="js/carousel.js" defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
   <link href="css/landingpage.css" rel="stylesheet">
+  <script src="js/scripts.js" defer></script>
 
 </head>
+
 <body>
-    <canvas id="matrix-canvas" style="position: fixed; top: 0; left: 0; z-index: -1;"></canvas>
-    <nav>
-        <div class="nav-left">
-            <img src="images/fontys.png" alt="Fontys Logo">
-            <search>
-                <input type="text" placeholder="Zoeken">
+  <canvas id="matrix-canvas" style="position: fixed; top: 0; left: 0; z-index: -1;"></canvas>
+  <nav>
+    <div class="nav-left">
+      <img src="images/fontys.png" alt="Fontys Logo">
+      <search>
+        <input type="text" placeholder="Zoeken">
+    </div>
+    <div class="nav-right">
+      <div class="navigation">
+        <div class="dropdown">
+          <a href="index.html">Opleidingen</a>
+          <div class="dropdown-content" id="dropdown1">
+            <a href="#">Masters</a>
+            <a href="#">Cursussen</a>
+            <a href="#">Minoren</a>
+            <a href="#">Kennisevents</a>
+          </div>
         </div>
-        <div class="nav-right">
-            <div class="navigation">
-                <div class="dropdown">
-                    <a href="index.html">Opleidingen</a>
-                    <div class="dropdown-content" id="dropdown1">
-                        <a href="#">Masters</a>
-                        <a href="#">Cursussen</a>
-                        <a href="#">Minoren</a>
-                        <a href="#">Kennisevents</a>
-                    </div>
-                </div>
-                <div class="dropdown">
-                    <a href="cursussen.html">Studiekeuze</a>
-                    <div class="dropdown-content" id="dropdown2">
-                        <a href="#">Open dag</a>
-                        <a href="#">Studiekeuze activiteiten per opleiding</a>
-                        <a href="#">Hulp bij studiekeuze</a>
-                        <a href="#">Studeren bij Fontys</a>
-                        <a href="#">Aanmelden & inschrijven</a>
-                    </div>
-                </div>
-                <div class="dropdown">
-                    <a href="contact.html">Onderzoek</a>
-                    <div class="dropdown-content" id="dropdown3">
-                        <a href="#">Praktijkgericht onderzoek bij Fontys</a>
-                        <a href="#">Onderzoek voor bedrijfsvraagstukken</a>
-                        <a href="#">Hulp bij studiekeuze</a>
-                        <a href="#">Studeren bij Fontys</a>
-                        <a href="#">Aanmelden en inschrijven</a>
-                    </div>
-                </div>
-                <div class="dropdown">
-                    <a href="login.html">Samenwerken</a>
-                    <div class="dropdown-content" id="dropdown4">
-                        <a href="#">Voor werkgevers</a>
-                        <a href="#">Stagiars & afstudeerders</a>
-                        <a href="#">Alumni</a>
-                    </div>
-                </div>
-                <div class="dropdown">
-                    <a href="login.html">Over Fontys</a>
-                    <div class="dropdown-content" id="dropdown5">
-                        <a href="#">Organisatie</a>
-                        <a href="#">Werken bij Fontys</a>
-                        <a href="#">Nieuws en pers</a>
-                        <a href="#">Locaties</a>
-                        <a href="#">Contact</a>
-                       
-                    </div>
-                </div>
-            </div>
+        <div class="dropdown">
+          <a href="cursussen.html">Studiekeuze</a>
+          <div class="dropdown-content" id="dropdown2">
+            <a href="#">Open dag</a>
+            <a href="#">Studiekeuze activiteiten per opleiding</a>
+            <a href="#">Hulp bij studiekeuze</a>
+            <a href="#">Studeren bij Fontys</a>
+            <a href="#">Aanmelden & inschrijven</a>
+          </div>
         </div>
-    </nav>
+        <div class="dropdown">
+          <a href="contact.html">Onderzoek</a>
+          <div class="dropdown-content" id="dropdown3">
+            <a href="#">Praktijkgericht onderzoek bij Fontys</a>
+            <a href="#">Onderzoek voor bedrijfsvraagstukken</a>
+            <a href="#">Hulp bij studiekeuze</a>
+            <a href="#">Studeren bij Fontys</a>
+            <a href="#">Aanmelden en inschrijven</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a href="login.html">Samenwerken</a>
+          <div class="dropdown-content" id="dropdown4">
+            <a href="#">Voor werkgevers</a>
+            <a href="#">Stagiars & afstudeerders</a>
+            <a href="#">Alumni</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a href="login.html">Over Fontys</a>
+          <div class="dropdown-content" id="dropdown5">
+            <a href="#">Organisatie</a>
+            <a href="#">Werken bij Fontys</a>
+            <a href="#">Nieuws en pers</a>
+            <a href="#">Locaties</a>
+            <a href="#">Contact</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
   <main class="main">
     <section class="showcase">
       <div class="text-content">
@@ -83,71 +86,99 @@
     </section>
     <section class="info">
       <h2>Deeltijd ICT studeren?</h2>
-      <p>Geef je loopbaan een boost met een deeltijdopleiding om kennis en vaardigheden te verbreden en verdiepen of je verder te ontwikkelen in een specifieke functie. Je kunt in deeltijd ICT studeren op drie niveaus met opdrachten uit eigen werkpraktijk.</p>
+      <p>Geef je loopbaan een boost met een deeltijdopleiding om kennis en vaardigheden te verbreden en verdiepen of je
+        verder te ontwikkelen in een specifieke functie. Je kunt in deeltijd ICT studeren op drie niveaus met opdrachten
+        uit eigen werkpraktijk.</p>
       <a href="https://www.fontys.nl/Open-dagen-bij-Fontys.htm">
         <div class="opendaginfo">Bezoek open dag</div>
-    </a>
+      </a>
     </section>
     <section class="call-to-action">
       <h2>Kies jouw eigen studieroute en word de ICT'er die je zou willen zijn!</h2>
     </section>
     <section class="boxes-container-container">
-    <section class="boxes-container">
+      <section class="boxes-container">
 
-      <div class="box">
+        <div class="box">
           <!-- Box 1 -->
           <img src="images/ADICT.png" alt="AD-ICT">
           <h2>AD-ICT (Associate Degree)</h2>
           <p>Tweejarige opleiding op HBO niveau gericht op een specifieke functie</p>
           <div class="boxbutton" id="myButton1">Meer informatie</div>
-          <div id="mySection1" style="display: none; margin: 0 20px; padding-top: 20px; padding-bottom: 20px"> Wil jij een gerichte ICT-functie op HBO-niveau of wil je een stap verder zetten in je huidige ICT-functie maar geen 4 jaar studeren? Dan is de Associate Degree opleiding wellicht de juiste match voor jou! Wil je later doorstromen naar de bachelor HBO-ICT, dan is een soepel doorstroomprogramma voor je geregeld.
+          <div id="mySection1" style="display: none; margin: 0 20px; padding-top: 20px; padding-bottom: 20px"> Wil jij
+            een gerichte ICT-functie op HBO-niveau of wil je een stap verder zetten in je huidige ICT-functie maar geen
+            4 jaar studeren? Dan is de Associate Degree opleiding wellicht de juiste match voor jou! Wil je later
+            doorstromen naar de bachelor HBO-ICT, dan is een soepel doorstroomprogramma voor je geregeld.
 
             Over de opleiding
-            
-            Fontys biedt als enige en eerste hogeschool een brede Associate Degree opleiding aan binnen de ICT. In het eerste half jaar maak je via drie van vijf verschillende richtingen kennis met de breedte van het ICT-vakgebied. Van websites vormgeven, organisatieprocessen automatiseren, netwerken inrichten, software ontwikkelen tot robots programmeren. Daarna kies je één richting waarbinnen je specifiek wordt opgeleid voor een gerichte ICT-functie met oog voor verandering en verbetering binnen die functie. </div>
-      </div>
-      <div class="box">
+
+            Fontys biedt als enige en eerste hogeschool een brede Associate Degree opleiding aan binnen de ICT. In het
+            eerste half jaar maak je via drie van vijf verschillende richtingen kennis met de breedte van het
+            ICT-vakgebied. Van websites vormgeven, organisatieprocessen automatiseren, netwerken inrichten, software
+            ontwikkelen tot robots programmeren. Daarna kies je één richting waarbinnen je specifiek wordt opgeleid voor
+            een gerichte ICT-functie met oog voor verandering en verbetering binnen die functie. </div>
+        </div>
+        <div class="box">
           <!-- Box 2 -->
           <img src="images/HBOICT.png" alt="HBO-ICT">
           <h2>HBO-ICT (Bachelor)</h2>
           <p>Kies je persoonlijke leerroute: verbreden of verdiepen binnen het totale aanbod</p>
           <div class="boxbutton" id="myButton2">Meer informatie</div>
-          <div id="mySection2" style="display: none; margin: 0 20px; padding-top: 20px; padding-bottom: 20px">ICT is overal. Elke dag wordt er gewerkt aan de ontwikkeling van nieuwe toepassingen. Wil jij een bachelor opleiding volgen in het brede ICT vakgebied? Als omscholing of juist als aanvulling op je huidige ICT-baan? In welke richting je ook verder wilt, bij ons is het mogelijk.
+          <div id="mySection2" style="display: none; margin: 0 20px; padding-top: 20px; padding-bottom: 20px">ICT is
+            overal. Elke dag wordt er gewerkt aan de ontwikkeling van nieuwe toepassingen. Wil jij een bachelor
+            opleiding volgen in het brede ICT vakgebied? Als omscholing of juist als aanvulling op je huidige ICT-baan?
+            In welke richting je ook verder wilt, bij ons is het mogelijk.
 
             Over de opleiding
-            
-            Je doet je kennis op door een combinatie van zelfstudie, lessen op school en virtuele sessies, maar ook met het toepassen van praktijkopdrachten in je werkomgeving. Hierdoor is er een mooie wisselwerking tussen theorie en praktijk.
-            
-            In principe loop je geen stage, maar gebruik je hiervoor je passende werkomgeving om je werkervaring aan te tonen. Je sluit je opleiding af met een afstudeeropdracht die je bij je werkgever of een ander bedrijf kunt uitvoeren.</div>
-      </div>
-      <div class="box">
+
+            Je doet je kennis op door een combinatie van zelfstudie, lessen op school en virtuele sessies, maar ook met
+            het toepassen van praktijkopdrachten in je werkomgeving. Hierdoor is er een mooie wisselwerking tussen
+            theorie en praktijk.
+
+            In principe loop je geen stage, maar gebruik je hiervoor je passende werkomgeving om je werkervaring aan te
+            tonen. Je sluit je opleiding af met een afstudeeropdracht die je bij je werkgever of een ander bedrijf kunt
+            uitvoeren.</div>
+        </div>
+        <div class="box">
           <!-- Box 3 -->
           <img src="images/Versneld.png" alt="Versneld-HBO">
           <h2>Versnelde instroom</h2>
           <p>Verdiep je in een specifiek vakgebied en ontwikkel je tot expert</p>
           <div class="boxbutton" id="myButton3">Meer informatie</div>
-          <div id="mySection3" style="display: none; margin: 0 20px; padding-top: 20px; padding-bottom: 20px">Ontwikkel je ICT-vaardigheden met een van de cursussen van Accelerate IT
+          <div id="mySection3" style="display: none; margin: 0 20px; padding-top: 20px; padding-bottom: 20px">Ontwikkel
+            je ICT-vaardigheden met een van de cursussen van Accelerate IT
 
-            Wil jij je als professional of als werkzoekende graag ontwikkelen op ICT-vlak, maar is tijd het grootste struikelblok? Dan is een cursus een goed idee. Onze hbo-cursussen bieden je niet alleen diepgaande kennis en een professioneel netwerk, maar je doet vooral waardevolle praktijkervaring op die essentieel is voor persoonlijke groei en verbeterde carrièremogelijkheden.</div>
-      </div>
-      <div class="box">
+            Wil jij je als professional of als werkzoekende graag ontwikkelen op ICT-vlak, maar is tijd het grootste
+            struikelblok? Dan is een cursus een goed idee. Onze hbo-cursussen bieden je niet alleen diepgaande kennis en
+            een professioneel netwerk, maar je doet vooral waardevolle praktijkervaring op die essentieel is voor
+            persoonlijke groei en verbeterde carrièremogelijkheden.</div>
+        </div>
+        <div class="box">
           <!-- Box 4 -->
           <img src="images/Master.png" alt="Master">
           <h2>Master of applied IT</h2>
           <p>Verdiep je in een specifiek vakgebied en ontwikkel je tot expert</p>
           <div class="boxbutton" id="myButton4">Meer informatie</div>
-          <div id="mySection4" style="display: none; margin: 0 20px; padding-top: 20px; padding-bottom: 20px"> Our world revolves increasingly around ICT. Challenges both in technology and society at large are more complex and require solutions that go beyond ICT-only expertise and application. Are you someone who likes to find answers to these challenges? Do you want to develop applications that have an impact in a larger context?
+          <div id="mySection4" style="display: none; margin: 0 20px; padding-top: 20px; padding-bottom: 20px"> Our world
+            revolves increasingly around ICT. Challenges both in technology and society at large are more complex and
+            require solutions that go beyond ICT-only expertise and application. Are you someone who likes to find
+            answers to these challenges? Do you want to develop applications that have an impact in a larger context?
             About the programme
-            
-            Are you an independent and confident ICT professional who wants to learn to deduce insights from challenges that lead to general, innovative solutions? In short, are you someone who wants to create solutions that impact society? Then the Fontys Master of Applied IT is for you.
-            
-            Fontys ICT offers motivated students the opportunity to enrol in the Master of Applied IT.. This master programme is connected to the Fontys ICT bachelor's programme (BSc) and offers you the opportunity to further professionalise with a broader and deeper knowledge of your field.
-            
-            At Fontys ICT, we strive for a close connection and cooperation with the professional field in our education. Therefore, you can expect that in our the Master of Applied IT too.</div>
-      </div>
-  </section>
+
+            Are you an independent and confident ICT professional who wants to learn to deduce insights from challenges
+            that lead to general, innovative solutions? In short, are you someone who wants to create solutions that
+            impact society? Then the Fontys Master of Applied IT is for you.
+
+            Fontys ICT offers motivated students the opportunity to enrol in the Master of Applied IT.. This master
+            programme is connected to the Fontys ICT bachelor's programme (BSc) and offers you the opportunity to
+            further professionalise with a broader and deeper knowledge of your field.
+
+            At Fontys ICT, we strive for a close connection and cooperation with the professional field in our
+            education. Therefore, you can expect that in our the Master of Applied IT too.</div>
+        </div>
+      </section>
     </section>
-  </section>
+    </section>
     <section class="info">
       <div class="information">
         <div class="info-left">
@@ -182,7 +213,7 @@
 
         <div class="info-right">
           <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/2n9E0OTmCQE?&theme=dark&autohide=2" frameborder="0"></iframe>
+            <iframe width='500' height='294' src="https://www.youtube.com/embed/JnMdiW2-ol4?&theme=dark&autohide=2"frameborder="0"></iframe></div>
           </div>
           <div style='font-size: 0.8em'></div>
         </div>
@@ -190,121 +221,308 @@
       </div>
 
       <!-- <a href="#">Contact</a> -->
-      <script>
-$(".mainnav div").click(function() {
-  $("ul").slideToggle();
-  $("ul ul").css("display", "none");
-  $(".mainnav .on").toggleClass("on");
-});
-$(".hasDD").click(function(e) {
-  $(this)
-    .find("> ul")
-    .slideToggle();
-  $(this)
-    .find("> ul ul")
-    .css("display", "none");
-  $(this)
-    .find("> ul li")
-    .removeClass("on");
-  $(this).toggleClass("on");
-  e.stopPropagation();
-});
 
-        
-        </script>
+
+
       <div class="dropdowns">
 
         <div class="foto-links-dropdown">
-          <img src="images\students-working-study-group 1.png" alt="AD-ICT">
+          <img style="max-width: 777px; width: 777px; " src="images\students-working-study-group 1.png" alt="AD-ICT">
+        </div>
+
+        <script>
+document.addEventListener('DOMContentLoaded', function () {
+  var questionDropdowns = document.querySelectorAll('.singlequestion-dropdown');
+  var answerDropdowns = document.querySelectorAll('.single-answer-dropdown-open');
+
+  for (let i = 0; i < questionDropdowns.length; i++) {
+    questionDropdowns[i].addEventListener('click', function (event) {
+      event.preventDefault();
+      var displayStyle = getComputedStyle(answerDropdowns[i]).display;
+      if (displayStyle === 'none') {
+        answerDropdowns[i].style.display = 'block';
+      } else {
+        answerDropdowns[i].style.display = 'none';
+      }
+    });
+  }
+});
+        </script>
+
+        <div class="questions-rechts-dropdown">
+          <h2>Typerend voor ons onderwijs</h2>
+          <a href="#answer1">
+            <div class="singlequestion-dropdown">
+              <div class="dropdown-question">
+                <ul>
+                  <li>
+                    Toonaangevend en innoverend instituut
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </a>
+
+          <div id="answer1" class="single-answer-dropdown-open">
+            <a>
+              Lorem ipsum dolor sit amet consectetur. Eget elementum scelerisque ligula praesent neque at et volutpat
+              consectetur. Tortor mollis pharetra mauris pellentesque nunc mauris suspendisse posuere. Dui sit at tellus
+              mauris semper.
+            </a>
+          </div>
+          <a href="#answer2">
+            <div class="singlequestion-dropdown">
+              <div class="dropdown-question">
+                <ul>
+                  <li>
+                    Toonaangevend en innoverend instituut
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </a>
+
+          <div id="answer2" class="single-answer-dropdown-open">
+            <a>
+              Lorem ipsum dolor sit amet consectetur. Eget elementum scelerisque ligula praesent neque at et volutpat
+              consectetur. Tortor mollis pharetra mauris pellentesque nunc mauris suspendisse posuere. Dui sit at tellus
+              mauris semper.
+            </a>
+          </div>
+
+          <a href="#answer2">
+            <div class="singlequestion-dropdown">
+              <div class="dropdown-question">
+                <ul>
+                  <li>
+                    Toonaangevend en innoverend instituut
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </a>
+
+          <div id="answer2" class="single-answer-dropdown-open">
+            <a>
+              Lorem ipsum dolor sit amet consectetur. Eget elementum scelerisque ligula praesent neque at et volutpat
+              consectetur. Tortor mollis pharetra mauris pellentesque nunc mauris suspendisse posuere. Dui sit at tellus
+              mauris semper.
+            </a>
+          </div>
+
+          <a href="#answer2">
+            <div class="singlequestion-dropdown">
+              <div class="dropdown-question">
+                <ul>
+                  <li>
+                    Toonaangevend en innoverend instituut
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </a>
+
+          <div id="answer2" class="single-answer-dropdown-open">
+            <a>
+              Lorem ipsum dolor sit amet consectetur. Eget elementum scelerisque ligula praesent neque at et volutpat
+              consectetur. Tortor mollis pharetra mauris pellentesque nunc mauris suspendisse posuere. Dui sit at tellus
+              mauris semper.
+            </a>
+          </div>
+
+          <a href="#answer2">
+            <div class="singlequestion-dropdown">
+              <div class="dropdown-question">
+                <ul>
+                  <li>
+                    Toonaangevend en innoverend instituut
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </a>
+
+          <div id="answer2" class="single-answer-dropdown-open">
+            <a>
+              Lorem ipsum dolor sit amet consectetur. Eget elementum scelerisque ligula praesent neque at et volutpat
+              consectetur. Tortor mollis pharetra mauris pellentesque nunc mauris suspendisse posuere. Dui sit at tellus
+              mauris semper.
+            </a>
+          </div>
+
+          <a href="#answer2">
+            <div class="singlequestion-dropdown">
+              <div class="dropdown-question">
+                <ul>
+                  <li>
+                    Toonaangevend en innoverend instituut
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </a>
+
+          <div id="answer2" class="single-answer-dropdown-open">
+            <a>
+              Lorem ipsum dolor sit amet consectetur. Eget elementum scelerisque ligula praesent neque at et volutpat
+              consectetur. Tortor mollis pharetra mauris pellentesque nunc mauris suspendisse posuere. Dui sit at tellus
+              mauris semper.
+            </a>
+          </div>
+
+          <a href="#answer2">
+            <div class="singlequestion-dropdown">
+              <div class="dropdown-question">
+                <ul>
+                  <li>
+                    Toonaangevend en innoverend instituut
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </a>
+
+          <div id="answer2" class="single-answer-dropdown-open">
+            <a>
+              Lorem ipsum dolor sit amet consectetur. Eget elementum scelerisque ligula praesent neque at et volutpat
+              consectetur. Tortor mollis pharetra mauris pellentesque nunc mauris suspendisse posuere. Dui sit at tellus
+              mauris semper.
+            </a>
+          </div>
+
+          <a href="#answer2">
+            <div class="singlequestion-dropdown">
+              <div class="dropdown-question">
+                <ul>
+                  <li>
+                    Toonaangevend en innoverend instituut
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </a>
+
+          <div id="answer2" class="single-answer-dropdown-open">
+            <a>
+              Lorem ipsum dolor sit amet consectetur. Eget elementum scelerisque ligula praesent neque at et volutpat
+              consectetur. Tortor mollis pharetra mauris pellentesque nunc mauris suspendisse posuere. Dui sit at tellus
+              mauris semper.
+            </a>
+          </div>
+
+          <a href="#answer2">
+            <div class="singlequestion-dropdown">
+              <div class="dropdown-question">
+                <ul>
+                  <li>
+                    Toonaangevend en innoverend instituut
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </a>
+
+          <div id="answer2" class="single-answer-dropdown-open">
+            <a>
+              Lorem ipsum dolor sit amet consectetur. Eget elementum scelerisque ligula praesent neque at et volutpat
+              consectetur. Tortor mollis pharetra mauris pellentesque nunc mauris suspendisse posuere. Dui sit at tellus
+              mauris semper.
+            </a>
+          </div>
         </div>
         
-        <nav class="mainnav">
-          <div> <i class="fa fa-bars">menu</i> </div>
-          <ul>
 
-            <li class="hasDD"><a href="">First Level </a>
-              <ul>
-                <ul>
-                  <ul>
-                  </ul>
-            </li>
-          </ul>
-          </li>
-          <li><a href="">jQuery</a></li>
-          <li><a href="">Vanilla JavaScript</a></li>
-          </ul>
-          </li>
-
-          </ul>
-        </nav>
         
 
+      </div>
       </div>
       <h2>Alumini aan het woord</h2>
       <section>
-          <div id="gradient-left"></div>
-          <div id="carousel">
-              <article>
-                  <img src="img/daan.jpg" alt="Daan">
-                  <content>
-                      <h3><b>Daan Pingen</b> - Senior Software Engineer</h3>
-                      <p>Als oud-student van de ICT-opleiding aan Fontys Hogeschool, kan ik met volle overtuiging zeggen dat mijn tijd daar de basis heeft gelegd voor mijn succesvolle carrière als Senior Software Engineer. De opleiding bood een uitgebalanceerd curriculum dat zowel theoretische kennis als praktische vaardigheden omvatte, wat van ons als studenten echte probleemoplossers maakte.
-                      <br>Een aspect dat ik bijzonder waardeer, is de hands-on ervaring die we kregen tijdens projecten en stageperiodes. Deze praktijkgerichte aanpak stelde ons in staat om direct te werken aan echte problemen in de industrie, waardoor we waardevolle inzichten opdeden en onze vaardigheden konden aanscherpen voordat we de arbeidsmarkt betraden.</p>
-                      <button><a href="">Spreek met Daan</a></button>
-                  </content>
-              </article>
-              <article>
-                  <img src="img/frank.jpg" alt="Frank">
-                  <content>
-                      <h3><b>Frank Holla</b> - Robotics Software Engineer</h3>
-                      <p>Als oud-student van de ICT-opleiding aan Fontys Hogeschool, kan ik met volle overtuiging zeggen dat mijn tijd daar de basis heeft gelegd voor mijn succesvolle carrière als Robotics Software Engineer. De opleiding bood een uitgebalanceerd curriculum dat zowel theoretische kennis als praktische vaardigheden omvatte, wat van ons als studenten echte probleemoplossers maakte.
-                      <br>Een aspect dat ik bijzonder waardeer, is de hands-on ervaring die we kregen tijdens projecten en stageperiodes. Deze praktijkgerichte aanpak stelde ons in staat om direct te werken aan echte problemen in de industrie, waardoor we waardevolle inzichten opdeden en onze vaardigheden konden aanscherpen voordat we de arbeidsmarkt betraden.</p>
-                      <button><a href="">Spreek met Frank</a></button>
-                  </content>
-              </article>
-              <article>
-                  <img src="img/noah.jpg" alt="Noah">
-                  <content>
-                      <h3><b>Noah van der Veen</b> - UI/UX Designer and Developer</h3>
-                      <p>Als voormalig student van de ICT-opleiding aan Fontys Hogeschool, kan ik met volle overtuiging zeggen dat mijn tijd daar de fundamenten heeft gelegd voor mijn bloeiende carrière als UI/UX Designer en Developer. De opleiding bood een rijk curriculum dat zowel theoretische inzichten als praktische vaardigheden omvatte, wat ons als studenten uitdaagde om creatieve probleemoplossers te worden.
-                      <br>Een aspect dat ik enorm waardeerde, was de nadruk op het belang van gebruikerservaring en gebruikersinterfaceontwerp binnen de ICT-sector. Tijdens mijn studie kreeg ik de kans om diep in te duiken in de wereld van UI/UX-design, waarbij ik leerde hoe ik intuïtieve en boeiende gebruikerservaringen kon creëren die zowel functioneel als esthetisch bevredigend waren.</p>
-                      <button><a href="">Spreek met Noah</a></button>
-                  </content>
-              </article>
-          </div>
-          <div id="gradient-right"></div>
+        <div id="gradient-left"></div>
+        <div id="carousel">
+          <article>
+            <img src="img/daan.jpg" alt="Daan">
+            <content>
+              <h3><b>Daan Pingen</b> - Senior Software Engineer</h3>
+              <p>Als oud-student van de ICT-opleiding aan Fontys Hogeschool, kan ik met volle overtuiging zeggen dat
+                mijn tijd daar de basis heeft gelegd voor mijn succesvolle carrière als Senior Software Engineer. De
+                opleiding bood een uitgebalanceerd curriculum dat zowel theoretische kennis als praktische vaardigheden
+                omvatte, wat van ons als studenten echte probleemoplossers maakte.
+                <br>Een aspect dat ik bijzonder waardeer, is de hands-on ervaring die we kregen tijdens projecten en
+                stageperiodes. Deze praktijkgerichte aanpak stelde ons in staat om direct te werken aan echte problemen
+                in de industrie, waardoor we waardevolle inzichten opdeden en onze vaardigheden konden aanscherpen
+                voordat we de arbeidsmarkt betraden.
+              </p>
+              <button><a href="">Spreek met Daan</a></button>
+            </content>
+          </article>
+          <article>
+            <img src="img/frank.jpg" alt="Frank">
+            <content>
+              <h3><b>Frank Holla</b> - Robotics Software Engineer</h3>
+              <p>Als oud-student van de ICT-opleiding aan Fontys Hogeschool, kan ik met volle overtuiging zeggen dat
+                mijn tijd daar de basis heeft gelegd voor mijn succesvolle carrière als Robotics Software Engineer. De
+                opleiding bood een uitgebalanceerd curriculum dat zowel theoretische kennis als praktische vaardigheden
+                omvatte, wat van ons als studenten echte probleemoplossers maakte.
+                <br>Een aspect dat ik bijzonder waardeer, is de hands-on ervaring die we kregen tijdens projecten en
+                stageperiodes. Deze praktijkgerichte aanpak stelde ons in staat om direct te werken aan echte problemen
+                in de industrie, waardoor we waardevolle inzichten opdeden en onze vaardigheden konden aanscherpen
+                voordat we de arbeidsmarkt betraden.
+              </p>
+              <button><a href="">Spreek met Frank</a></button>
+            </content>
+          </article>
+          <article>
+            <img src="img/noah.jpg" alt="Noah">
+            <content>
+              <h3><b>Noah van der Veen</b> - UI/UX Designer and Developer</h3>
+              <p>Als voormalig student van de ICT-opleiding aan Fontys Hogeschool, kan ik met volle overtuiging zeggen
+                dat mijn tijd daar de fundamenten heeft gelegd voor mijn bloeiende carrière als UI/UX Designer en
+                Developer. De opleiding bood een rijk curriculum dat zowel theoretische inzichten als praktische
+                vaardigheden omvatte, wat ons als studenten uitdaagde om creatieve probleemoplossers te worden.
+                <br>Een aspect dat ik enorm waardeerde, was de nadruk op het belang van gebruikerservaring en
+                gebruikersinterfaceontwerp binnen de ICT-sector. Tijdens mijn studie kreeg ik de kans om diep in te
+                duiken in de wereld van UI/UX-design, waarbij ik leerde hoe ik intuïtieve en boeiende
+                gebruikerservaringen kon creëren die zowel functioneel als esthetisch bevredigend waren.
+              </p>
+              <button><a href="">Spreek met Noah</a></button>
+            </content>
+          </article>
+        </div>
+        <div id="gradient-right"></div>
       </section>
 
       <div id="navigationarrows">
-          <button id="arrowleft">&#10094;</button>
-          <button id="arrowright">&#10095;</button>
+        <button id="arrowleft">&#10094;</button>
+        <button id="arrowright">&#10095;</button>
       </div>
       <section id="calltoactiongrid">
         <article class="purplecalltoaction">
-            <h2>Weet je het al zeker?</h2>
-            <p>Meld je dan aan voor ICT OVP via Studielink. Je kunt in Februari en in September beginnen. </p>
-            <button>
-              <a href="">Meld je aan</a>
-              <div class="fontys-arrow">&#10095;</div>
-            </button>
+          <h2>Weet je het al zeker?</h2>
+          <p>Meld je dan aan voor ICT OVP via Studielink. Je kunt in Februari en in September beginnen. </p>
+          <button>
+            <a href="">Meld je aan</a>
+            <div class="fontys-arrow">&#10095;</div>
+          </button>
         </article>
         <article>
-            <h2>Fontys OVP Open Dag</h2>
-            <p>Meld je dan aan voor ICT OVP via Studielink. Je kunt je aanmelden voor drie verschillende open dagen.</p>
-            <button>
-              <a href="">Bezoek open dag</a>
-              <div class="fontys-arrow">&#10095;</div>
-            </button>
+          <h2>Fontys OVP Open Dag</h2>
+          <p>Meld je dan aan voor ICT OVP via Studielink. Je kunt je aanmelden voor drie verschillende open dagen.</p>
+          <button>
+            <a href="">Bezoek open dag</a>
+            <div class="fontys-arrow">&#10095;</div>
+          </button>
         </article>
         <article>
-            <h2>Op de hoogte blijven?</h2>
-            <p>Doe mee met onze WhatsApp community om meer te leren over ICT OVP en altijd op de hoogte te blijven! Je telefoonnummer is niet zichtbaar voor andere leden en blijft altijd prive.</p>
-            <button>
-              <a href="">Kom bij de community</a>
-              <div class="fontys-arrow">&#10095;</div>
-            </button>
+          <h2>Op de hoogte blijven?</h2>
+          <p>Doe mee met onze WhatsApp community om meer te leren over ICT OVP en altijd op de hoogte te blijven! Je
+            telefoonnummer is niet zichtbaar voor andere leden en blijft altijd prive.</p>
+          <button>
+            <a href="">Kom bij de community</a>
+            <div class="fontys-arrow">&#10095;</div>
+          </button>
         </article>
-    </section>
+      </section>
   </main>
 
   <footer>
@@ -350,8 +568,10 @@ $(".hasDD").click(function(e) {
       <div class="footer-col">
         <h2>Social Media</h2>
         <a href="#">Find us on social media:</a>
-        </div>
+      </div>
     </div>
-  </footer>  
+  </footer>
 </body>
+
+
 </html>
