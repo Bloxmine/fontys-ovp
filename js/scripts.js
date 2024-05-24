@@ -63,7 +63,18 @@ arrowRight.addEventListener('click', () => {
         changeArrows();
     }
 });
-<<<<<<< HEAD
-=======
 
->>>>>>> parent of 741101f (Video Section & Typerend voor Onderwijs section finished)
+document.addEventListener('DOMContentLoaded', function() {
+    var questionDropdown = document.querySelector('.singlequestion-dropdown');
+    var answerDropdown = document.querySelector('.single-answer-dropdown-open');
+  
+    questionDropdown.addEventListener('click', function(event) {
+      event.preventDefault();
+      var displayStyle = getComputedStyle(answerDropdown).display;
+      if (displayStyle === 'none') {
+        answerDropdown.style.display = 'block';
+      } else {
+        answerDropdown.style.display = 'none';
+      }
+    });
+  });

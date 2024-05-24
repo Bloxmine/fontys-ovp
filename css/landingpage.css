@@ -6,8 +6,29 @@
     --background-color-main: #f4f4f4;
     --text-shadow: 0 0 0px #000;
     --fontys-white: #ffffff;
+    --side-white: #ffffff;
     --louis-grey: #524D43;
+    --louis-grey-bg: #e0e0e0;
+    --greycolor: #F7F7F7;
+    --darkgreycolor: #D9D9D9;
+    --purplecolor: #663366;
+    --pinkcolor: #DA0077;
 }
+/* 
+.is-theme-matrix {
+  --fontys-purple: #000;
+  --fontys-blue: #0f0;
+  --text-color-main: #0f0;
+  --text-color-secondary: #000;
+  --background-color-main: #f4f4f4;
+  --text-shadow: 0 0 0px #000;
+  --fontys-white: #13b320;
+  --louis-grey: #0f0;
+  --greycolor: #000;
+  --darkgreycolor: #D9D9D9;
+  --purplecolor: #0f0;
+  --pinkcolor: #0f0;
+} */
 
   body {
     font-family: 'Roboto', sans-serif;
@@ -51,40 +72,42 @@
   
 .showcase {
   display: grid;
-  grid-template-columns: repeat(16, 1fr);
-  grid-template-rows: repeat(9, 1fr);
+  grid-template-columns: repeat(15, 1fr);
+  grid-template-rows: repeat(10, 1fr);
   grid-template-areas:
-                        ". . . . . . . . . . . . . . . ."
-                        ". . . . . . . . . . . . . . . ."
-                        ". . . . . . . . . . . . . . . ."
-                        ". . t t t t t t t . . . . . . ."
-                        ". . t t t t t t t . . . . . . ."
-                        ". . t t t t t t t . . c c c c ."
-                        ". . . . . . . . . . . c c c c ."
-                        ". i i i i i i i i i i c c c c ."
-                        "w i i i i i i i i i i c c c c wh";
+                        ". . . . . . . . . . . . . . ."
+                        ". . . . . . . . . . . . . . ."
+                        ". . . . . . . . . . . . . . ."
+                        ". t t t t t t t t . . . . . ."
+                        ". t t t t t t t t . . . . . ."
+                        ". t t t t t t t t . . c c c ."
+                        ". . . . . . . . . . . c c c ."
+                        ". i i i i i i i i i i c c c ."
+                        "w i i i i i i i i i i c c c wh"
+                        "w i i i i i i i i i i c c c wh";
   background-image: url(/images/heading.png);
   background-size: cover;
   background-position: 0px -50px;
-  height: 700px;
+  height: 750px;
 }
 
   
 #whitearea-1 {
   grid-area: w;
-  background-color: var(--fontys-white);
+  background-color: var(--side-white);
   width: 100%;
   height: 100%;
 }
 
 #whitearea-2 {
   grid-area: wh;
-  background-color: var(--fontys-white);
+  background-color: var(--side-white);
   width: 100%;
   height: 100%;
 }
 
 #text-content {
+  margin-left: 1rem;
   grid-area: t;
   padding: 1rem;
   color: var(--fontys-white);
@@ -97,10 +120,31 @@
 #text-content > h1 {
   font-size: 4rem;
   font-family: 'RobotoBold', sans-serif;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 #text-content > p {
   font-size: 1.2rem;
+}
+
+@keyframes flyby {
+  0% {
+    transform: translateX(-100vw);
+  }
+  100% {
+    transform: translateX(100vw);
+  }
+}
+
+.flyby-div {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 82px;
+  background-image: url(/images/contra.gif);
+  background-size: contain;
+  animation: flyby 6s linear forwards;
 }
 
 #info {
@@ -112,6 +156,12 @@
   width: 100%;
   height: 100%;
   align-items: start;
+}
+
+#info > h2{
+  font-size: 1.3rem;
+  font-family: 'RobotoBold', sans-serif;
+  margin-bottom: 0.5rem;
 }
 
 #calltoaction {
@@ -129,6 +179,7 @@
                         "button"
                         "button";
   box-shadow: 0 0 10px #878787;
+  gap: 1em;
   width: 100%;
   height: 100%;
   background-color: var(--fontys-white);
@@ -156,6 +207,11 @@
 
 #calltoaction > ul > li {
  list-style: none;
+ margin: 1em 0;
+}
+
+#calltoaction > ul > li > svg {
+  margin-right: 1em;
 }
 
 #calltoaction button{
@@ -171,6 +227,16 @@
   height: 100%;
   align-items: center;
   justify-content: center;
+}
+
+#calltoaction button:hover{
+  background-color: var(--pinkcolor);
+  color: var(--fontys-white);
+  cursor: pointer;
+}
+
+#calltoaction button:hover a {
+  color: var(--fontys-white);
 }
 
 #calltoaction button a{
@@ -256,6 +322,7 @@
   font-size: 1.2em;
   margin-bottom: 10px;
   color: white;
+  text-align: left;
 }
 
 .footer-col ul {
@@ -290,6 +357,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   justify-content: start;
+  background-color: rgba(255, 255, 255, 0.0);
 }
 
 .boxes-container {
@@ -306,6 +374,7 @@
   padding: 0;
   text-align: center;
   min-height: 400px;
+  box-shadow: 0 0 10px #878787;
 }
 
 .box img {
@@ -325,7 +394,7 @@
 
 .boxbutton {
   text-decoration: none;
-  color: var(--fontys-blue);
+  color: white;
   background-color: var(--fontys-purple);
   padding: 1rem 3rem;
   margin-left: 1rem;
@@ -620,10 +689,20 @@ section#calltoactiongrid article button{
   position: relative;
   grid-area: button;
   height: 4em;
-  background-color: var(--greycolor);
+  background-color: var(--louis-grey-bg);
   border: 1px solid black;
   align-self: end;
   color: black
+}
+
+section#calltoactiongrid article button:hover{
+  background-color: var(--pinkcolor);
+  color: white;
+  cursor: pointer;
+}
+
+section#calltoactiongrid article button:hover a {
+  color: var(--fontys-white);
 }
 
 section#calltoactiongrid article button a{
@@ -830,7 +909,7 @@ div#navigationarrows > button.inactive {
   justify-content: space-between;
   align-items: center;
   vertical-align: middle;
-
+margin-top: 40px;
   max-width: 1440px
 }
 
@@ -943,7 +1022,47 @@ line-height: 30px;
 }
 
 .single-answer-dropdown-open{
-  background-color: var(--louis-grey);
+  background-color: var(--louis-grey-bg);
   margin-top: -11px;
   padding: 0px 20px 20px 20px;
+}
+
+.building-ovp{
+  background-image: url(/images/DroneImageFontysOVP.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 777px;
+  display: flex;
+  flex-direction: column;
+align-items: center;
+justify-content: center;
+margin-top: -88px;
+padding-top: 55px;
+}
+
+.building-ovp h1{
+  color: var(--side-white);
+  font-size: 60px;
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.building-ovp button{
+  background-image: url("data:image/svg+xml,%3Csvg width='17' height='29' viewBox='0 0 17 29' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 27L14 14.5L2 2' stroke='white' stroke-width='4'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position: 93% 50%;
+  height: 70px;
+  width: 388px;
+  color: #FFFFFF;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: solid 1px var(--fontys-white);
+  font-size: 20px;
+  padding: 0px 33px 0px 0px;
+  margin-top: 40px;
+}
+
+.building-ovp button:hover{
+  background-color: var(--fontys-purple);
+  color: var(--fontys-white);
+  cursor: pointer;
 }
